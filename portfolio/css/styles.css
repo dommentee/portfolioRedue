@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  padding: 0 5%;
+  font-family: 'Work Sans', sans-serif;
+  color: #3D3D3D;
+  font-weight: 300;
+  background: -webkit-linear-gradient(#fcfafa, #fcfbfb);
+  background-color: #EDEDED; }
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .9em; }
+  header .logo {
+    padding: 30px;
+    background: url("../images/logo.png");
+    background-size: cover; }
+  header nav a {
+    text-decoration: none;
+    color: #303030; }
+  header nav .contact-button {
+    padding: 3px 18px;
+    border-radius: 2px;
+    color: #387094;
+    margin: 0;
+    border: 2.3px solid #387094;
+    transition: all .3s; }
+    header nav .contact-button:hover {
+      background: -webkit-linear-gradient(left, #D1D1D1, #D4D4D4); }
+
+.hero .hero-greeting {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hero .hero-greeting #greeting-wrap {
+    white-space: pre-line;
+    font-size: 60px;
+    color: #3D3D3D;
+    font-weight: 400; }
+  .hero .hero-greeting #cursor {
+    width: 4px;
+    height: 80px;
+    background-color: #616161; }
+  .hero .hero-greeting .flicker-out {
+    opacity: .02;
+    transition: ease-in; }
+  .hero .hero-greeting .movement {
+    margin-left: 50px; }
+.hero .introduction {
+  width: 45%; }
+
+/*# sourceMappingURL=styles.css.map */
