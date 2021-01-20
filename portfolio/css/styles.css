@@ -12,49 +12,83 @@ body {
   background: -webkit-linear-gradient(#fcfafa, #fcfbfb);
   background-color: #EDEDED; }
 
+.clear-fix {
+  clear: both; }
+
 header {
   width: 100%;
+  padding: 8px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: .9em; }
   header .logo {
-    padding: 30px;
+    padding: 32px;
     background: url("../images/logo.png");
     background-size: cover; }
-  header nav a {
-    text-decoration: none;
-    color: #303030; }
   header nav .contact-button {
-    padding: 3px 18px;
+    text-decoration: none;
+    font-size: 1.09em;
+    font-weight: 500;
+    padding: 3px 20px;
     border-radius: 2px;
     color: #387094;
-    margin: 0;
-    border: 2.3px solid #387094;
-    transition: all .3s; }
+    border: 2.5px solid #387094; }
     header nav .contact-button:hover {
-      background: -webkit-linear-gradient(left, #D1D1D1, #D4D4D4); }
+      background-color: #F5DA20;
+      transition: .5s; }
 
-.hero .hero-greeting {
-  padding: 50px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .hero .hero-greeting #greeting-wrap {
-    white-space: pre-line;
-    font-size: 60px;
-    color: #3D3D3D;
-    font-weight: 400; }
-  .hero .hero-greeting #cursor {
-    width: 4px;
-    height: 80px;
-    background-color: #616161; }
-  .hero .hero-greeting .flicker-out {
-    opacity: .02;
-    transition: ease-in; }
-  .hero .hero-greeting .movement {
-    margin-left: 50px; }
-.hero .introduction {
-  width: 45%; }
+.hero {
+  padding: 80px 0; }
+  .hero .hero-greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .hero .hero-greeting #greeting-wrap {
+      white-space: pre-line;
+      font-size: 2.5em;
+      font-weight: 500;
+      color: #387094; }
+    .hero .hero-greeting .redcolor {
+      color: #EB2435; }
+    .hero .hero-greeting #cursor {
+      width: 4px;
+      height: 75px;
+      background-color: #616161; }
+    .hero .hero-greeting .flicker-out {
+      opacity: .02;
+      transition: ease-in; }
+  .hero #intro-wrap .intro {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0 0 15px 0; }
+  .hero #intro-wrap #workbuttonwrap {
+    margin: auto;
+    width: auto;
+    text-align: center; }
+    .hero #intro-wrap #workbuttonwrap #workbutton {
+      display: inline-block;
+      text-decoration: none;
+      padding: 15px 25px;
+      color: #387094;
+      font-size: 1.1em;
+      font-weight: 500;
+      border: 2.5px solid #387094; }
+  .hero .hide {
+    transition: opacity 1.2s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden; }
+  .hero .show {
+    opacity: 1;
+    height: auto; }
+  .hero .display-none {
+    transition: opacity 2s ease-out;
+    opacity: 0;
+    height: 0; }
+
+.about {
+  background-color: aquamarine; }
 
 /*# sourceMappingURL=styles.css.map */
