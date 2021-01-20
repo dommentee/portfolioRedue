@@ -95,6 +95,10 @@ header {
         font-size: 1.1em;
         font-weight: 500;
         border: 2.5px solid #387094;
+        &:hover {
+          background-color:  #F5DA20;
+
+        }
       } 
     }
   }

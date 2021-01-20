@@ -75,6 +75,8 @@ header {
       font-size: 1.1em;
       font-weight: 500;
       border: 2.5px solid #387094; }
+      .hero #intro-wrap #workbuttonwrap #workbutton:hover {
+        background-color: #F5DA20; }
   .hero .hide {
     transition: opacity 1.2s ease-out;
     opacity: 0;
