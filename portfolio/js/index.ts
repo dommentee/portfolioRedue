@@ -14,6 +14,9 @@ const introWrap: any = document.getElementById('intro-wrap');
 const showIntro = () => {
   introWrap.classList.add('show')
 } 
+const hideCursor = () => {
+  cursor.classList.add('hide')
+}
 
 const printGreeting = (str) => {
   let i: any = 0;
@@ -24,8 +27,9 @@ const printGreeting = (str) => {
       setTimeout(getLetters, 200);
       introWrap.classList.add('hide')
     } else {
-      cursor.classList.add('display-none')
-      setTimeout(showIntro, 800)
+      setTimeout(hideCursor, 600)
+      // cursor.classList.add('display-none')
+      setTimeout(showIntro, 900)
       // introWrap.classList.add('show')
     }
   })();

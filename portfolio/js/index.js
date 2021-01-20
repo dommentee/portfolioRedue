@@ -13,6 +13,9 @@ var introWrap = document.getElementById('intro-wrap');
 var showIntro = function () {
     introWrap.classList.add('show');
 };
+var hideCursor = function () {
+    cursor.classList.add('hide');
+};
 var printGreeting = function (str) {
     var i = 0;
     (function getLetters() {
@@ -23,8 +26,9 @@ var printGreeting = function (str) {
             introWrap.classList.add('hide');
         }
         else {
-            cursor.classList.add('display-none');
-            setTimeout(showIntro, 800);
+            setTimeout(hideCursor, 600);
+            // cursor.classList.add('display-none')
+            setTimeout(showIntro, 900);
             // introWrap.classList.add('show')
         }
     })();
