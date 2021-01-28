@@ -1,3 +1,5 @@
+//infninite rotation of carousel
+
 //inner hero varoables
 const cursor: HTMLElement = document.getElementById('cursor');
 //cursuer flicker
@@ -24,13 +26,11 @@ const printGreeting = (str) => {
     const char = str[i++];
     text.nodeValue += char == newLineCharacter ? '\n' : char;
     if (i < str.length) {
-      setTimeout(getLetters, 200);
+      setTimeout(getLetters, 0);
       introWrap.classList.add('hide')
     } else {
       setTimeout(hideCursor, 600)
-      // cursor.classList.add('display-none')
       setTimeout(showIntro, 900)
-      // introWrap.classList.add('show')
     }
   })();
   

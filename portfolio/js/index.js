@@ -27,9 +27,7 @@ var printGreeting = function (str) {
         }
         else {
             setTimeout(hideCursor, 600);
-            // cursor.classList.add('display-none')
             setTimeout(showIntro, 900);
-            // introWrap.classList.add('show')
         }
     })();
 };
