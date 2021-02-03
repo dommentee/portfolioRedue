@@ -12,9 +12,7 @@ body {
 	font-weight: 300;
 	background: -webkit-linear-gradient( #fcfafa, #fcfbfb);
   background-color: #EDEDED;
-  -webkit-transform-style: preserve-3d;
-
-  
+  -webkit-transform-style: preserve-3d;  
 }
 .clear-fix {
 	clear: both;
@@ -134,14 +132,11 @@ header {
 .carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
 .carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
 
-.autorotate {
-  transform: translateZ(-288) rotateY(-360)
-}
 .landing {
   
 }
 .hero {
-  padding: 80px 0;
+  margin-top: 18vh;
   .hero-greeting {
     display: flex;
     align-items: center;
@@ -213,5 +208,133 @@ header {
   background-color: aquamarine;
 }
 
+//breakpoints
 
+@media screen and (max-width: 1024px) {
+  .main {
+    .overlayer {
+      height: 80vh;
+    }
+  }
+  header {
+    .logo {
+      box-sizing: inherit;
+      padding: 30px;
+    }
+    nav {
+      .contact-button {
+      }
+    }
+  }
+  .hero {
+    margin-top: 19vh;
+    .hero-greeting {
+      #greeting-wrap {
+        //color: #3D3D3D;
+      }
+      #cursor {
+        width: 4px;
+        height: 75px;
+        background-color: #616161;
+      }
+    }
+    #intro-wrap {
+      .intro {
+      }
+      #workbuttonwrap {
+        #workbutton{ 
+          padding: 15px 25px ;
+          color: #387094;
+          font-size: 1.1em;
+          font-weight: 500;
+        } 
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: 60vh;
+  }
+  header {
+    .logo {
+      padding: 28px;
+    }
+    nav {
+      .contact-button {
+
+      }
+    }
+  }
+  .hero {
+    margin-top: 15vh;
+    .hero-greeting {
+      #greeting-wrap {
+        font-size: 2em;
+      }
+      #cursor {
+        width: 3px;
+        height: 60px;
+        background-color: #616161;
+      }
+    }
+    #intro-wrap {
+      .intro {
+        font-size: 1.7em;
+        padding: 0 0 10px 0;
+      }
+      #workbuttonwrap {
+        #workbutton{ 
+          padding: 10px 23px ;
+        } 
+      }
+    }
+  }
+
+}
+
+//mobile
+@media screen and (max-width: 480px) {
+  .main {
+    height: 60vh;
+  }
+  header {
+    padding: 10px 0;
+    font-size: .5em;
+    .logo {
+		  padding: 20px;
+    }
+    nav {
+      .contact-button {
+        font-size: .1em;
+        padding: 1px 5px;
+      }
+    }
+  }
+  .hero {
+   
+    .hero-greeting {
+      #greeting-wrap {
+        font-size: 1.2em;
+      }
+      #cursor {
+        width: 2px;
+        height: 35px;
+      }
+    }
+    #intro-wrap {
+      .intro {
+        font-size: 1em;
+        padding: 0 0 15px 0;
+      }
+      #workbuttonwrap {
+        #workbutton{ 
+          padding: 10px 23px ;
+        } 
+      }
+    }
+  }
+
+}
 

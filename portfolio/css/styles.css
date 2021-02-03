@@ -123,11 +123,8 @@ header {
 .carousel__cell:nth-child(9) {
   transform: rotateY(320deg) translateZ(288px); }
 
-.autorotate {
-  transform: translateZ(-288) rotateY(-360); }
-
 .hero {
-  padding: 80px 0; }
+  margin-top: 18vh; }
   .hero .hero-greeting {
     display: flex;
     align-items: center;
@@ -180,5 +177,68 @@ header {
 .about {
   top: 100%;
   background-color: aquamarine; }
+
+@media screen and (max-width: 1024px) {
+  .main .overlayer {
+    height: 80vh; }
+
+  header .logo {
+    box-sizing: inherit;
+    padding: 30px; }
+
+  .hero {
+    margin-top: 19vh; }
+    .hero .hero-greeting #cursor {
+      width: 4px;
+      height: 75px;
+      background-color: #616161; }
+    .hero #intro-wrap #workbuttonwrap #workbutton {
+      padding: 15px 25px;
+      color: #387094;
+      font-size: 1.1em;
+      font-weight: 500; } }
+@media screen and (max-width: 768px) {
+  .main {
+    height: 60vh; }
+
+  header .logo {
+    padding: 28px; }
+
+  .hero {
+    margin-top: 15vh; }
+    .hero .hero-greeting #greeting-wrap {
+      font-size: 2em; }
+    .hero .hero-greeting #cursor {
+      width: 3px;
+      height: 60px;
+      background-color: #616161; }
+    .hero #intro-wrap .intro {
+      font-size: 1.7em;
+      padding: 0 0 10px 0; }
+    .hero #intro-wrap #workbuttonwrap #workbutton {
+      padding: 10px 23px; } }
+@media screen and (max-width: 480px) {
+  .main {
+    height: 60vh; }
+
+  header {
+    padding: 10px 0;
+    font-size: .5em; }
+    header .logo {
+      padding: 20px; }
+    header nav .contact-button {
+      font-size: .1em;
+      padding: 1px 5px; }
+
+  .hero .hero-greeting #greeting-wrap {
+    font-size: 1.2em; }
+  .hero .hero-greeting #cursor {
+    width: 2px;
+    height: 35px; }
+  .hero #intro-wrap .intro {
+    font-size: 1em;
+    padding: 0 0 15px 0; }
+  .hero #intro-wrap #workbuttonwrap #workbutton {
+    padding: 10px 23px; } }
 
 /*# sourceMappingURL=styles.css.map */
