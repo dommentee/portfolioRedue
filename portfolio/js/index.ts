@@ -26,7 +26,7 @@ const printGreeting = (str) => {
     const char = str[i++];
     text.nodeValue += char == newLineCharacter ? '\n' : char;
     if (i < str.length) {
-      setTimeout(getLetters, 0);
+      setTimeout(getLetters, 65);
       introWrap.classList.add('hide')
     } else {
       setTimeout(hideCursor, 600)

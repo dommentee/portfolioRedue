@@ -1,3 +1,4 @@
+//infninite rotation of carousel
 //inner hero varoables
 var cursor = document.getElementById('cursor');
 //cursuer flicker
@@ -22,7 +23,7 @@ var printGreeting = function (str) {
         var char = str[i++];
         text.nodeValue += char == newLineCharacter ? '\n' : char;
         if (i < str.length) {
-            setTimeout(getLetters, 200);
+            setTimeout(getLetters, 65);
             introWrap.classList.add('hide');
         }
         else {
