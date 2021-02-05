@@ -25,30 +25,43 @@ body {
     height: 90vh;
     width: 100vw;
     overflow: hidden;
-    padding: 0 5%;
+    padding: 0 7%;
   }
 }//end of main
 
 header {
   width: 100%;
-  padding: 8px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: .9em;
   .logo {
-		padding: 32px;
-		background: url("../images/logo.png");
-    background-size: cover;
+		padding: 60px;
+    background: url("../images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   nav {
-    .contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
       text-decoration: none;
       font-size: 1.09em;
       font-weight: 500;
+      color: #387094 ;
+    }
+
+    .about-button {
+      margin-right: 15px;
+      &:hover {
+        color: rgba(14, 199, 231, 0.8);
+      }
+    }
+    .contact-button {
       padding: 3px 20px;
       border-radius: 2px;
-      color: #387094 ;
       border: 2.5px solid #387094; 
       &:hover {
         background: rgba(14, 199, 231, 0.8);
@@ -57,6 +70,50 @@ header {
       }
     }
   }
+  .uinav {  
+    display: none;
+    cursor: pointer;
+    .bar{
+      width: 31px;
+      height: 5px;
+      margin: 3px 0;
+      background-color: #387094;
+    }
+    .disapear {
+      display: none;
+      opacity: 0;
+      transition: .5s;
+      overflow: hidden;
+    }
+    .reverse {
+      transform: rotate(-45deg) translate(-7px, 5px);
+      transition: .5s;
+    }
+    .reversetwo {
+      transform: rotate(45deg);
+      transition: .5s;
+    }
+  }
+}
+.mobile-nav {
+  width: 0;
+  // width: 25%;
+  background-color: cornflowerblue;
+  overflow: hidden;
+  float: right;
+  position: absolute;
+  //position: relative;
+  z-index: 1;
+  right: 5%;
+  transition: .5s ease-out;
+  display: none;
+  .navcontent {
+    position: relative;
+  }
+}
+.closeNav {
+  width: 25%;
+  padding: 15px;
 }
 
 .lineswrap {
@@ -215,13 +272,12 @@ header {
 @media screen and (max-width: 1024px) {
   .main {
     .overlayer {
-      height: 80vh;
+      height: 75vh;
     }
   }
   header {
     .logo {
-      box-sizing: inherit;
-      padding: 30px;
+
     }
     nav {
       .contact-button {
@@ -255,13 +311,66 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
   .main {
-    height: 60vh;
+    .overlayer {
+      // height: 100vh;
+    }
   }
   header {
     .logo {
-      padding: 28px;
+      padding: 45px;
+    }
+    nav {
+
+      .contact-button {
+        font-size: .8em;
+      }
+    }
+  }
+  .hero {
+    margin-top: 12vh;
+    .hero-greeting {
+      #greeting-wrap {
+        white-space: pre-line;
+        font-size: 1.6em;
+        font-weight: 500;
+
+        //color: #3D3D3D;
+      }
+      #cursor {
+        width: 2.5px;
+        height: 50px;
+        background-color: #616161;
+      }
+    }
+    #intro-wrap {
+      .intro {
+        font-size: 1.3em;
+      }
+      
+      #workbuttonwrap {
+
+        #workbutton{ 
+          padding: 8px 12px ;
+          color: #387094;
+          font-size: 1em;
+          font-weight: 500;
+        } 
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: 75vh;
+  }
+  header {
+    .logo {
+    
     }
     nav {
       .contact-button {
@@ -288,6 +397,7 @@ header {
       }
       #workbuttonwrap {
         #workbutton{ 
+          display: none;
           padding: 10px 23px ;
         } 
       }
@@ -297,21 +407,26 @@ header {
 }
 
 //mobile
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .main {
     height: 60vh;
   }
   header {
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: .5em;
     .logo {
-		  padding: 20px;
+		  padding: 45px;
     }
     nav {
-      .contact-button {
-        font-size: .1em;
-        padding: 1px 5px;
+      .about-button {
+        display: none;
       }
+      .contact-button {
+        display: none;
+      }
+    }
+    .uinav {
+      display: block;
     }
   }
   .hero {
