@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <title> Designer | Developer </title>	
 
@@ -78,7 +79,9 @@
             </div>
           </nav>
           <div class="mobile-nav">
-            hello
+            <a class="about-link" href="#about">About</a>
+            <a class="portfolio-link" href="#portfolio">Portfolio</a>
+            <a class="contact-link" href="#contact-info">Contact</a>
           </div>
         </header>
         <div class="landing">
@@ -98,13 +101,38 @@
       </div>
     </div>
     <!-- end of main --> 
-    <div class="about"> 
+    <div class="about" id="about"> 
       <p>
         I am a creative and forward-thinking Front-end Developer. 
         I have a passion for clean and functional user interfaces that
           enhance user expierences.
         </p>
     </div>
+    <div class="portfolio" id="portfolio"> 
+      <p>
+        portfolio
+      </p>
+    </div>
+    <div class="contact-info" id="contact-info"> 
+      <p>
+        contact info
+      </p>
+    </div>
     <script src="js/index.js"></script>
+    <script>
+      $(document).ready(function(){
+         $("a").on('click', function(event) {
+          if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+           $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 950, function(){
+            window.location.hash = hash;
+           });
+          } 
+         });
+      });
+      </script>
   </body>
 </html>

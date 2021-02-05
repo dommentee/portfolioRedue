@@ -2,6 +2,9 @@
 //nav in header for toggle and display nav
 var burgerMenue = document.querySelector('.uinav');
 var nav = document.getElementsByClassName('mobile-nav');
+var aboutLink = document.querySelector('.about-link');
+var portfolioLink = document.querySelector('.portfolio-link');
+var contactLink = document.querySelector('.contact-link');
 function openNav() {
     if (nav[0].classList) {
         nav[0].classList.toggle('closeNav');
@@ -23,6 +26,9 @@ function openNav() {
 }
 ;
 burgerMenue.addEventListener('click', openNav);
+aboutLink.addEventListener('click', openNav);
+portfolioLink.addEventListener('click', openNav);
+contactLink.addEventListener('click', openNav);
 //infninite rotation of carousel
 //inner hero varoables
 var cursor = document.getElementById('cursor');

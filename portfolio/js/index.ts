@@ -2,11 +2,15 @@
 //nav in header for toggle and display nav
 const burgerMenue: any = document.querySelector('.uinav');
 const nav: any = document.getElementsByClassName('mobile-nav');
+const aboutLink: any = document.querySelector('.about-link');
+const portfolioLink: any = document.querySelector('.portfolio-link');
+const contactLink: any = document.querySelector('.contact-link');
 
 function openNav() {
   if (nav[0].classList) {
     nav[0].classList.toggle('closeNav')
-  } else {
+
+  }else {
     //IE9
     const classes = nav[0].className.split(" ");
     const i = classes.indexOf('closeNav');
@@ -23,6 +27,9 @@ function openNav() {
   document.getElementById('barthree').classList.toggle('reversetwo');
 };
 burgerMenue.addEventListener('click', openNav);
+aboutLink.addEventListener('click', openNav);
+portfolioLink.addEventListener('click', openNav);
+contactLink.addEventListener('click', openNav);
 
 //infninite rotation of carousel
 

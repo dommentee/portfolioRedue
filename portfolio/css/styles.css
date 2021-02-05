@@ -80,20 +80,31 @@ header {
 
 .mobile-nav {
   width: 0;
-  background-color: cornflowerblue;
-  overflow: hidden;
+  height: 100%;
   float: right;
+  background-color: #e7e7e7;
+  overflow: hidden;
   position: absolute;
   z-index: 1;
-  right: 5%;
-  transition: .5s ease-out;
+  right: 0%;
+  left: 0;
+  transition: .5s ease-in-out;
   display: none; }
-  .mobile-nav .navcontent {
-    position: relative; }
+  .mobile-nav a {
+    width: 100%;
+    color: #3D3D3D;
+    display: inline-block;
+    padding: 5px 0;
+    margin: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 500; }
+    .mobile-nav a:hover {
+      background-color: rgba(14, 199, 231, 0.8); }
 
 .closeNav {
-  width: 25%;
-  padding: 15px; }
+  width: 100%; }
 
 .lineswrap {
   overflow: hidden;
@@ -223,7 +234,6 @@ header {
     height: 0; }
 
 .about {
-  top: 100%;
   background-color: aquamarine; }
 
 @media screen and (max-width: 1024px) {
@@ -280,11 +290,12 @@ header {
       font-size: 1.7em;
       padding: 0 0 10px 0; }
     .hero #intro-wrap #workbuttonwrap #workbutton {
-      display: none;
       padding: 10px 23px; } }
 @media screen and (max-width: 640px) {
   .main {
     height: 60vh; }
+    .main .overlayer {
+      padding: 0 5%; }
 
   header {
     padding: 5px 0;
@@ -298,6 +309,11 @@ header {
     header .uinav {
       display: block; }
 
+  .mobile-nav {
+    float: right;
+    display: block;
+    top: 12vh; }
+
   .hero .hero-greeting #greeting-wrap {
     font-size: 1.2em; }
   .hero .hero-greeting #cursor {
@@ -307,6 +323,6 @@ header {
     font-size: 1em;
     padding: 0 0 15px 0; }
   .hero #intro-wrap #workbuttonwrap #workbutton {
-    padding: 10px 23px; } }
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
