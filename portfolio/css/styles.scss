@@ -27,7 +27,7 @@ body {
     overflow: hidden;
     padding: 0 7%;
   }
-  border-bottom: 30px solid  #387194d8;
+  border-bottom: 40px solid #505050 ;
 }//end of main
 
 header {
@@ -270,28 +270,39 @@ header {
   }
   
 }
-.about { 
-  h3 {padding: 5px 0;
-    //color:rgba(14, 199, 231, 0.8);
-    font-weight: 400;
-    text-align: center;
-  }
-  .title {
-    margin: 20px 0 40px  0;
-    color: rgba(228, 19, 106, 0.747);
-    font-size: 3em;
-    text-align: center;
-    font-weight: 400;
+.title {
+  padding: 10px 0;;
 
+  //color: #fcfbfb;
+  //margin: 20px 0 40px  0;
+  //color: rgba(228, 19, 106, 0.747);
+  font-size: 3em;
+  text-align: center;
+  font-weight: 400;
+  div {
+    width: 60px;
+    height: 5px;
+    background-color: rgba(228, 19, 106, 0.747);
+    margin: 0 auto;
+  }
+}
+.about {
+  padding: 2% 7%; 
+  //padding: 40px 0;
+  h3 {
+    padding: 15px 0;
+    width: 100%;
+    display: inline-block;
+    color: rgba(228, 19, 106, 0.747);
+    font-weight: 400;
+    text-align: center;
   }
   .aboutwrap {
-    // background: -webkit-linear-gradient(top, #F7F7F7, #EDEDED);
-	  // background-color: #EDEDED;
     display: flex;
     .about-text-wrap {
       background-color: #EDEDED;
       width: 35%;
-      padding: 4% 1% 2% 7%;
+      padding: 4% 1.5%;
       span {
         color:rgba(228, 19, 106, 0.747);
         font-size: 3em;
@@ -314,14 +325,10 @@ header {
 
     .aboutcontentwrap {
       width: 65%;
-      height: 100%;
-      display: inline;
-      padding: 4% 7% 2% 0;
       display: inline;
       .tilewrap {
         width: 96%;
-        margin: 0 2%; 
-        padding: 0 7px 20px 7px;
+        float: right;
         display: flex;
         .tile {
           width: 24.25%;
@@ -366,16 +373,13 @@ header {
         }
       }
       #toolset {
-        width: 94%;
-        margin:0 3%;
-        padding-top: 20px;
+        padding-top: 10px;
         border-radius: 5px;
         background-color:  rgba(14, 199, 231, 0.8) ;
         .tile {
           width: 30%;
           border: none;
           color: #fcfbfb;
-          //border: 2px solid #fcfbfb;
           margin: 0 0 0 2.5%;
           .toollogo {
             color: #3D3D3D;
@@ -384,9 +388,6 @@ header {
 
           }
           .iconwrap {
-            
-            //border-top: 2px solid #387094;
-
             i {
               font-size: 2.3em;;
               width: 100%;
@@ -415,6 +416,9 @@ header {
       } 
     }
   }
+}
+.portfolio {
+  //background-color: yellow;
 }
 
 //breakpoints
