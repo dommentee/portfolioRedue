@@ -19,7 +19,7 @@ body {
 .main {
   position: relative;
   overflow: hidden;
-  border-bottom: 30px solid  #387194d8; }
+  border-bottom: 40px solid #505050; }
   .main .overlayer {
     position: relative;
     height: 95vh;
@@ -234,111 +234,115 @@ header {
     opacity: 0;
     height: 0; }
 
-.about h3 {
-  padding: 5px 0;
-  font-weight: 400;
-  text-align: center; }
-.about .title {
-  margin: 20px 0 40px  0;
-  color: rgba(228, 19, 106, 0.747);
+.title {
+  padding: 10px 0;
   font-size: 3em;
   text-align: center;
   font-weight: 400; }
-.about .aboutwrap {
-  display: flex; }
-  .about .aboutwrap .about-text-wrap {
-    background-color: #EDEDED;
-    width: 35%;
-    padding: 4% 1% 2% 7%; }
-    .about .aboutwrap .about-text-wrap span {
-      color: rgba(228, 19, 106, 0.747);
-      font-size: 3em; }
-    .about .aboutwrap .about-text-wrap #about-text-wrap {
-      font-size: 1.25em;
-      margin: 25px 0 0 0; }
-      .about .aboutwrap .about-text-wrap #about-text-wrap a {
-        display: inline-block;
-        text-decoration: none;
+  .title div {
+    width: 60px;
+    height: 5px;
+    background-color: rgba(228, 19, 106, 0.747);
+    margin: 0 auto; }
+
+.about {
+  padding: 2% 7%; }
+  .about h3 {
+    padding: 15px 0;
+    width: 100%;
+    display: inline-block;
+    color: rgba(228, 19, 106, 0.747);
+    font-weight: 400;
+    text-align: center; }
+  .about .aboutwrap {
+    display: flex; }
+    .about .aboutwrap .about-text-wrap {
+      background-color: #EDEDED;
+      width: 35%;
+      padding: 4% 1.5%; }
+      .about .aboutwrap .about-text-wrap span {
         color: rgba(228, 19, 106, 0.747);
-        font-weight: 300;
-        margin: 10px 0 0 0; }
-        .about .aboutwrap .about-text-wrap #about-text-wrap a:hover {
-          color: rgba(14, 199, 231, 0.8); }
-  .about .aboutwrap .aboutcontentwrap {
-    width: 65%;
-    height: 100%;
-    display: inline;
-    padding: 4% 7% 2% 0;
-    display: inline; }
-    .about .aboutwrap .aboutcontentwrap .tilewrap {
-      width: 96%;
-      margin: 0 2%;
-      padding: 0 7px 20px 7px;
-      display: flex; }
-      .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
-        width: 24.25%;
-        float: left;
-        text-align: center;
-        border: 2px solid #387094;
+        font-size: 3em; }
+      .about .aboutwrap .about-text-wrap #about-text-wrap {
+        font-size: 1.25em;
+        margin: 25px 0 0 0; }
+        .about .aboutwrap .about-text-wrap #about-text-wrap a {
+          display: inline-block;
+          text-decoration: none;
+          color: rgba(228, 19, 106, 0.747);
+          font-weight: 300;
+          margin: 10px 0 0 0; }
+          .about .aboutwrap .about-text-wrap #about-text-wrap a:hover {
+            color: rgba(14, 199, 231, 0.8); }
+    .about .aboutwrap .aboutcontentwrap {
+      width: 65%;
+      display: inline; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap {
+        width: 96%;
+        float: right;
+        display: flex; }
+        .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
+          width: 24.25%;
+          float: left;
+          text-align: center;
+          border: 2px solid #387094;
+          border-radius: 5px;
+          padding: 8px 5px; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile .iconwrap {
+            width: fit-content;
+            margin: 0 auto; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+            font-size: 1.3em;
+            font-weight: 500;
+            padding: 3px 0;
+            color: #387094; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+            font-size: 2.2em;
+            text-align: center; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile .iconwrap-responsive {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto; }
+            .about .aboutwrap .aboutcontentwrap .tilewrap .tile .iconwrap-responsive i:nth-child(2) {
+              margin: 0 2%; }
+        .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(2) {
+          margin: 0 1%; }
+        .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(3) {
+          margin: 0 1% 0 0; }
+      .about .aboutwrap .aboutcontentwrap #toolset {
+        padding-top: 10px;
         border-radius: 5px;
-        padding: 8px 5px; }
-        .about .aboutwrap .aboutcontentwrap .tilewrap .tile .iconwrap {
-          width: fit-content;
-          margin: 0 auto; }
-        .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
-          font-size: 1.3em;
-          font-weight: 500;
-          padding: 3px 0;
-          color: #387094; }
-        .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
-          font-size: 2.2em;
-          text-align: center; }
-        .about .aboutwrap .aboutcontentwrap .tilewrap .tile .iconwrap-responsive {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: fit-content;
-          margin: 0 auto; }
-          .about .aboutwrap .aboutcontentwrap .tilewrap .tile .iconwrap-responsive i:nth-child(2) {
-            margin: 0 2%; }
-      .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(2) {
-        margin: 0 1%; }
-      .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(3) {
-        margin: 0 1% 0 0; }
-    .about .aboutwrap .aboutcontentwrap #toolset {
-      width: 94%;
-      margin: 0 3%;
-      padding-top: 20px;
-      border-radius: 5px;
-      background-color: rgba(14, 199, 231, 0.8); }
-      .about .aboutwrap .aboutcontentwrap #toolset .tile {
-        width: 30%;
-        border: none;
-        color: #fcfbfb;
-        margin: 0 0 0 2.5%; }
-        .about .aboutwrap .aboutcontentwrap #toolset .tile .toollogo {
-          color: #3D3D3D;
-          font-size: 1.6em;
-          margin: 10px 0; }
-        .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
-          font-size: 2.3em;
-          width: 100%;
-          padding: 2px; }
-        .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
-          margin: 4px auto;
-          font-size: 1.5em;
-          width: fit-content;
-          padding: 5px 2px 2px 3px;
-          border: 2px solid  #357bb4;
-          font-weight: 500;
-          color: #357bb4; }
-        .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
-          width: fit-content;
-          margin: 4px auto;
-          padding: 3.5px;
+        background-color: rgba(14, 199, 231, 0.8); }
+        .about .aboutwrap .aboutcontentwrap #toolset .tile {
+          width: 30%;
+          border: none;
           color: #fcfbfb;
-          font-weight: 500;
-          border: 1.5px solid #fcfbfb; }
+          margin: 0 0 0 2.5%; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile .toollogo {
+            color: #3D3D3D;
+            font-size: 1.6em;
+            margin: 10px 0; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+            font-size: 2.3em;
+            width: 100%;
+            padding: 2px; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+            margin: 4px auto;
+            font-size: 1.5em;
+            width: fit-content;
+            padding: 5px 2px 2px 3px;
+            border: 2px solid  #357bb4;
+            font-weight: 500;
+            color: #357bb4; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+            width: fit-content;
+            margin: 4px auto;
+            padding: 3.5px;
+            color: #fcfbfb;
+            font-weight: 500;
+            border: 1.5px solid #fcfbfb; }
 
 @media screen and (max-width: 1024px) {
   .main .overlayer {
