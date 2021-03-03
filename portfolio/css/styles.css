@@ -246,7 +246,7 @@ header {
     margin: 0 auto; }
 
 .about {
-  padding: 2% 7%; }
+  padding: 5% 7%; }
   .about h3 {
     padding: 15px 0;
     width: 100%;
@@ -259,7 +259,7 @@ header {
     .about .aboutwrap .about-text-wrap {
       background-color: #EDEDED;
       width: 35%;
-      padding: 4% 1.5%; }
+      padding: 4% 3%; }
       .about .aboutwrap .about-text-wrap span {
         color: rgba(228, 19, 106, 0.747);
         font-size: 3em; }
@@ -312,7 +312,7 @@ header {
         .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(3) {
           margin: 0 1% 0 0; }
       .about .aboutwrap .aboutcontentwrap #toolset {
-        padding-top: 10px;
+        padding-top: 15px;
         border-radius: 5px;
         background-color: rgba(14, 199, 231, 0.8); }
         .about .aboutwrap .aboutcontentwrap #toolset .tile {
@@ -344,6 +344,9 @@ header {
             font-weight: 500;
             border: 1.5px solid #fcfbfb; }
 
+.portfolio {
+  background-color: #EDEDED; }
+
 @media screen and (max-width: 1024px) {
   .main .overlayer {
     height: 75vh; }
@@ -358,7 +361,30 @@ header {
       padding: 15px 25px;
       color: #387094;
       font-size: 1.1em;
-      font-weight: 500; } }
+      font-weight: 500; }
+
+  .about {
+    background-color: lawngreen;
+    padding: 4% 7%; }
+    .about .aboutwrap .about-text-wrap span {
+      font-size: 2.5em; }
+    .about .aboutwrap .about-text-wrap #about-text-wrap {
+      font-size: 1.2em; }
+    .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+      font-size: 1.2em; }
+    .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+      font-size: 2.1em; }
+    .about .aboutwrap .aboutcontentwrap #toolset {
+      padding-top: 13px; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+        font-size: 2.1em; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+        margin: 3px auto;
+        font-size: 1.4em;
+        width: fit-content; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+        margin: 3px auto;
+        padding: 3.5px; } }
 @media only screen and (max-width: 812px) {
   header .logo {
     padding: 45px; }
