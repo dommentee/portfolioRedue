@@ -364,7 +364,6 @@ header {
       font-weight: 500; }
 
   .about {
-    background-color: lawngreen;
     padding: 4% 7%; }
     .about .aboutwrap .about-text-wrap span {
       font-size: 2.5em; }
@@ -385,33 +384,70 @@ header {
       .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
         margin: 3px auto;
         padding: 3.5px; } }
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 823px) {
+  .main {
+    border-bottom: 20px solid #505050; }
+    .main .overlayer {
+      height: 90vh; }
+
   header .logo {
     padding: 45px; }
   header nav .contact-button {
     font-size: .8em; }
 
   .hero {
-    margin-top: 12vh; }
+    margin-top: 8vh; }
     .hero .hero-greeting #greeting-wrap {
       white-space: pre-line;
       font-size: 1.6em;
       font-weight: 500; }
     .hero .hero-greeting #cursor {
       width: 2.5px;
-      height: 50px;
+      height: 35px;
       background-color: #616161; }
     .hero #intro-wrap .intro {
       font-size: 1.3em; }
     .hero #intro-wrap #workbuttonwrap #workbutton {
-      padding: 8px 12px;
+      padding: 5px 9px;
       color: #387094;
       font-size: 1em;
       font-weight: 500; }
 
-  .about .title {
-    padding: 5px 0;
-    font-size: 2em; } }
+  .title {
+    padding: 7px 0;
+    font-size: 2em; }
+    .title div {
+      width: 50px;
+      height: 4px; }
+
+  .about {
+    padding: 3% 7%; }
+    .about .aboutwrap .about-text-wrap span {
+      font-size: 1.9em; }
+    .about .aboutwrap .about-text-wrap #about-text-wrap {
+      font-size: 1.1em;
+      margin: 15px 0 0 0; }
+      .about .aboutwrap .about-text-wrap #about-text-wrap a {
+        margin: 7px 0 0 0; }
+    .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
+      padding: 5px 3px;
+      font-size: .85em; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+        font-size: .9em; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+        font-size: 1.5em; }
+    .about .aboutwrap .aboutcontentwrap #toolset {
+      padding-top: 9px; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+        font-size: 2em; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+        margin: 3px auto;
+        font-size: 1.2em;
+        width: fit-content; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+        margin: 3px auto;
+        font-size: 1.2em;
+        padding: 3.5px; } }
 @media screen and (max-width: 768px) {
   .main {
     height: 75vh; }
@@ -428,10 +464,51 @@ header {
       font-size: 1.7em;
       padding: 0 0 10px 0; }
     .hero #intro-wrap #workbuttonwrap #workbutton {
-      padding: 10px 23px; } }
+      padding: 10px 23px; }
+
+  .title {
+    padding: 7px 0;
+    font-size: 1.9em; }
+    .title div {
+      width: 50px;
+      height: 4px; }
+
+  .about {
+    padding: 3% 7%; }
+    .about h3 {
+      padding: 10px 0;
+      font-size: 1em; }
+    .about .aboutwrap .about-text-wrap span {
+      font-size: 1.7em; }
+    .about .aboutwrap .about-text-wrap #about-text-wrap {
+      font-size: 1em;
+      margin: 12px 0 0 0; }
+      .about .aboutwrap .about-text-wrap #about-text-wrap a {
+        margin: 5px 0 0 0; }
+    .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
+      padding: 4px 2px;
+      font-size: .8em; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+        font-size: .9em; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+        font-size: 1.2em; }
+    .about .aboutwrap .aboutcontentwrap #toolset {
+      padding-top: 9px; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+        font-size: 1.7em; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+        font-size: 1em; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+        font-size: 1em; } }
+@media only screen and (max-width: 736px) {
+  .main {
+    height: 100vh; }
+
+  .hero {
+    margin-top: 5vh; } }
 @media screen and (max-width: 640px) {
   .main {
-    height: 60vh; }
+    height: 65vh; }
     .main .overlayer {
       padding: 0 5%; }
 
@@ -452,15 +529,86 @@ header {
     display: block;
     top: 12vh; }
 
-  .hero .hero-greeting #greeting-wrap {
-    font-size: 1.2em; }
-  .hero .hero-greeting #cursor {
-    width: 2px;
-    height: 35px; }
-  .hero #intro-wrap .intro {
-    font-size: 1em;
-    padding: 0 0 15px 0; }
-  .hero #intro-wrap #workbuttonwrap #workbutton {
-    display: none; } }
+  .hero {
+    margin-top: 15vh; }
+    .hero .hero-greeting #greeting-wrap {
+      font-size: 1.2em; }
+    .hero .hero-greeting #cursor {
+      width: 2px;
+      height: 35px; }
+    .hero #intro-wrap .intro {
+      font-size: 1em;
+      padding: 0 0 15px 0; }
+    .hero #intro-wrap #workbuttonwrap #workbutton {
+      display: none; }
+
+  .title {
+    padding: 6px 0;
+    font-size: 1.7em; }
+    .title div {
+      width: 45px;
+      height: 4px; }
+
+  .about {
+    padding: 3% 5%; }
+    .about h3 {
+      padding: 10px 0;
+      font-size: 1em; }
+    .about .aboutwrap {
+      display: inline-block; }
+      .about .aboutwrap .about-text-wrap {
+        background-color: transparent;
+        width: 100%;
+        text-align: center; }
+        .about .aboutwrap .about-text-wrap span {
+          font-size: 1.5em;
+          font-weight: 400; }
+        .about .aboutwrap .about-text-wrap #about-text-wrap {
+          font-size: 1.1em;
+          margin: 12px 0; }
+          .about .aboutwrap .about-text-wrap #about-text-wrap a {
+            margin: 9px 0 0 0; }
+      .about .aboutwrap .aboutcontentwrap {
+        padding: 0; }
+        .about .aboutwrap .aboutcontentwrap h3 {
+          color: #3D3D3D; }
+        .about .aboutwrap .aboutcontentwrap .tilewrap {
+          width: 100%;
+          display: inline; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
+            width: 48.5%;
+            height: 100px;
+            font-size: .8em;
+            padding: 4px; }
+            .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+              font-size: .9em; }
+            .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+              font-size: 1.2em; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(1) {
+            margin: 0% 3% 3% 0; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(2) {
+            margin: 0 0 3% 0; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(3) {
+            margin-right: 3%; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(4) {
+            margin: 0; }
+        .about .aboutwrap .aboutcontentwrap #toolset {
+          padding-top: 0; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile {
+            display: flex;
+            height: fit-content;
+            padding: 4px; }
+            .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap {
+              padding: 0; }
+              .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+                font-size: 1.5em; }
+            .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+              margin: 2px auto;
+              font-size: .9em;
+              padding: 3px 1px 1px 2px; }
+            .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+              margin: 2px auto;
+              padding: 2px;
+              font-size: .9em; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -466,7 +466,6 @@ header {
     }
   }
   .about {
-    background-color: lawngreen;
     padding: 4% 7%; 
     .aboutwrap {
       .about-text-wrap {
@@ -521,11 +520,12 @@ header {
   }
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 823px) {
   .main {
     .overlayer {
-      // height: 100vh;
+      height: 90vh;
     }
+    border-bottom: 20px solid #505050 ;
   }
   header {
     .logo {
@@ -539,7 +539,7 @@ header {
     }
   }
   .hero {
-    margin-top: 12vh;
+    margin-top: 8vh;
     .hero-greeting {
       #greeting-wrap {
         white-space: pre-line;
@@ -550,7 +550,7 @@ header {
       }
       #cursor {
         width: 2.5px;
-        height: 50px;
+        height: 35px;
         background-color: #616161;
       }
     }
@@ -562,7 +562,7 @@ header {
       #workbuttonwrap {
 
         #workbutton{ 
-          padding: 8px 12px ;
+          padding: 5px 9px ;
           color: #387094;
           font-size: 1em;
           font-weight: 500;
@@ -570,12 +570,71 @@ header {
       }
     }
   }
-  .about { 
+  .title {
+    padding: 7px 0;;
 
-    .title {
+    font-size: 2em;
+    div {
+      width: 50px;
+      height: 4px;
+    }
+  }
+  .about {
+    padding: 3% 7%; 
+    .aboutwrap {
+      .about-text-wrap {
+        span {
+          font-size: 1.9em;
+        }
+        #about-text-wrap {
+          font-size: 1.1em;
+          margin: 15px 0 0 0;
+          a {
+            margin: 7px 0 0 0;
+          }
+        }
+      }
+      .aboutcontentwrap {
+        .tilewrap {
+          .tile {
+            padding: 5px 3px;
+            font-size: .85em;
+            .iconwrap {
 
-      padding: 5px 0;
-      font-size: 2em;
+            }
+            span {
+              font-size: .9em;
+            }
+            i {
+              font-size: 1.5em;
+            }  
+            .iconwrap-responsive {
+
+            }
+          }
+        }
+        #toolset {
+          padding-top: 9px;
+          .tile {
+           
+            .iconwrap {
+              i {
+                font-size: 2em;;
+              }
+            }
+            #ts {
+              margin: 3px auto;
+              font-size: 1.2em;
+              width: fit-content;
+            }
+            #ps {
+              margin: 3px auto;
+              font-size: 1.2em;
+              padding: 3.5px;
+            }
+          }
+        } 
+      }
     }
   }
   
@@ -621,13 +680,92 @@ header {
       }
     }
   }
+  .title {
+    padding: 7px 0;;
+
+    font-size: 1.9em;
+    div {
+      width: 50px;
+      height: 4px;
+    }
+  }
+  .about {
+    padding: 3% 7%; 
+    h3 {
+      padding: 10px 0;
+      font-size: 1em;;
+    }
+    .aboutwrap {
+      .about-text-wrap {
+        span {
+          font-size: 1.7em;
+        }
+        #about-text-wrap {
+          font-size: 1em;
+          margin: 12px 0 0 0;
+          a {
+            margin: 5px 0 0 0;
+          }
+        }
+      }
+      .aboutcontentwrap {
+        .tilewrap {
+          .tile {
+            padding: 4px 2px;
+            font-size: .8em;
+            .iconwrap {
+            }
+            span {
+              font-size: .9em;
+            }
+            i {
+              font-size: 1.2em;
+            }  
+            .iconwrap-responsive {
+
+            }
+          }
+        }
+        #toolset {
+          padding-top: 9px;
+          .tile {
+           
+            .iconwrap {
+              i {
+                font-size: 1.7em;;
+              }
+            }
+            #ts {
+
+              font-size: 1em;
+
+            }
+            #ps {
+
+              font-size: 1em;
+            }
+          }
+        } 
+      }
+    }
+  }
 
 }
+
+@media only screen and (max-width: 736px) {
+  .main {
+    height: 100vh;
+  }
+  .hero {
+    margin-top: 5vh;
+  }
+}
+
 
 //mobile
 @media screen and (max-width: 640px) {
   .main {
-    height: 60vh;
+    height: 65vh;
     .overlayer {
       padding: 0 5%;
     }
@@ -657,7 +795,7 @@ header {
     top: 12vh;
   }
   .hero {
-   
+      margin-top: 15vh;
     .hero-greeting {
       #greeting-wrap {
         font-size: 1.2em;
@@ -679,6 +817,109 @@ header {
       }
     }
   }
+  .title {
+    padding: 6px 0;;
+
+    font-size: 1.7em;
+    div {
+      width: 45px;
+      height: 4px;
+    }
+  }
+  .about {
+    padding: 3% 5%; 
+    h3 {
+      padding: 10px 0;
+      font-size: 1em;;
+    }
+    .aboutwrap {
+      display: inline-block;
+
+      .about-text-wrap {
+        background-color: transparent;
+        width: 100%;
+        text-align: center;
+        span {
+          font-size: 1.5em;
+          font-weight: 400;
+        }
+        #about-text-wrap {
+          font-size: 1.1em;
+          margin: 12px 0 ;
+          a {
+            margin: 9px 0 0 0;
+          }
+        }
+      }
+      .aboutcontentwrap {
+        padding: 0;
+        h3 {
+          color: #3D3D3D;
+        }
+        .tilewrap {
+          width: 100%;
+          display: inline;
+
+          .tile {
+            width: 48.5%;
+            height: 100px;
+            font-size: .8em;
+            padding: 4px;
+
+            .iconwrap {
+            }
+            span {
+              font-size: .9em;
+            }
+            i {
+              font-size: 1.2em;
+            }  
+            .iconwrap-responsive {
+
+            }
+          }
+          .tile:nth-child(1) {
+            margin: 0% 3% 3% 0;
+          } 
+          .tile:nth-child(2) {
+            margin: 0 0 3% 0;
+          }
+          .tile:nth-child(3) {
+            margin-right:3%;
+          } 
+          .tile:nth-child(4) {
+            margin: 0;
+          }
+        }
+        #toolset {
+          padding-top: 0;
+
+          .tile {
+            display: flex;
+            height: fit-content;
+            padding: 4px;
+            .iconwrap {
+              padding: 0;
+              i {
+                font-size: 1.5em;;
+              }
+            }
+            #ts {
+              margin: 2px auto;
+              font-size: .9em;
+              padding: 3px 1px 1px 2px;
+
+            }
+            #ps {
+              margin: 2px auto;
+              padding: 2px;
+              font-size: .9em;
+            }
+          }
+        } 
+      }
+    }
+  }
+
 
 }
-
