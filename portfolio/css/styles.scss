@@ -101,7 +101,7 @@ header {
   height: 100%;
   float: right;
   // width: 25%;
-  background-color: #e7e7e7;;
+  background-color: #e7e7e7;
   overflow: hidden;
   position: absolute;
   //position: relative;
@@ -168,7 +168,7 @@ header {
     width: .2px;
     //background: rgba(163, 162, 162, 0.8);
     margin: 0 30px;
-    opacity: .2;
+    opacity: .5;
     //background-color: cornflowerblue;
   }
   #one {
@@ -272,7 +272,7 @@ header {
 }
 .title {
   padding: 10px 0;;
-
+  margin-bottom: 95px;
   //color: #fcfbfb;
   //margin: 20px 0 40px  0;
   //color: rgba(228, 19, 106, 0.747);
@@ -385,7 +385,6 @@ header {
             color: #3D3D3D;
             font-size: 1.6em;
             margin: 10px 0;
-
           }
           .iconwrap {
             i {
@@ -417,10 +416,89 @@ header {
     }
   }
 }
-
 .portfolio {
-  background-color: #EDEDED
-  
+  padding: 5% 7%;
+  background-color: #EDEDED;
+  .portfoliowrap {
+    display: inline-block;
+    width: 100%;
+    .portfolio-wrap {
+      width: 33.33%;
+      height: 295px;
+      float: left;
+      position: relative;
+      overflow: hidden;
+      transition: all .85s ease;
+      -webkit-transition-delay: .6s;
+      transition-delay: .6s;
+      box-shadow: 0 4px 4px #CFCFCF;    
+        .sitelogo {
+          
+        }
+    }
+    
+    .site {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 0;
+      overflow: hidden;
+      transition: .85s ease;
+      -webkit-transition-delay: .6s;
+      transition-delay: .6s;   
+    }
+    .site-link {
+      overflow: hidden;
+      position: relative;
+      display: inline;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      transition: all .85s ease;
+      -webkit-transition-delay: .6s;
+      transition-delay: .6s;
+      text-align: center;
+      .sitename {
+        padding: 5px 0;
+        font-weight: 500;
+        margin: 15px 0;
+      }
+      a {
+        color: #387094;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 30px;
+        border: 2.5px solid #387094;
+        margin: auto;
+        &:hover {
+          transition: .5s;
+          background: rgba(14, 199, 231, 0.8);
+        }
+      }
+    }
+    .portfolio-wrap:hover {/*important*/
+      .site-link {
+        height: 50%;
+        top: -50%;
+      }
+      .site {
+        top: -50%;
+      }
+    }
+    #jm2020 {
+      background: url("/./portfolio/images/gm2020bg1.png");
+      background-position: center;
+      background-size: cover;
+    
+      .sitelogo {
+        padding: 30px;
+        background: url("/./portfolio/images/gm2020logo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-top: 30%;
+      }
+    } 
+  }
 }
 
 //breakpoints

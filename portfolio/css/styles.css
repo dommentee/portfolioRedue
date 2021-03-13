@@ -140,7 +140,7 @@ header {
     display: inline;
     width: .2px;
     margin: 0 30px;
-    opacity: .2; }
+    opacity: .5; }
   .carousel #one {
     background: rgba(228, 19, 106, 0.884);
     height: 100vh; }
@@ -236,6 +236,7 @@ header {
 
 .title {
   padding: 10px 0;
+  margin-bottom: 95px;
   font-size: 3em;
   text-align: center;
   font-weight: 400; }
@@ -345,7 +346,72 @@ header {
             border: 1.5px solid #fcfbfb; }
 
 .portfolio {
+  padding: 5% 7%;
   background-color: #EDEDED; }
+  .portfolio .portfoliowrap {
+    display: inline-block;
+    width: 100%; }
+    .portfolio .portfoliowrap .portfolio-wrap {
+      width: 33.33%;
+      height: 295px;
+      float: left;
+      position: relative;
+      overflow: hidden;
+      transition: all .85s ease;
+      -webkit-transition-delay: .6s;
+      transition-delay: .6s;
+      box-shadow: 0 4px 4px #CFCFCF; }
+    .portfolio .portfoliowrap .site {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 0;
+      overflow: hidden;
+      transition: .85s ease;
+      -webkit-transition-delay: .6s;
+      transition-delay: .6s; }
+    .portfolio .portfoliowrap .site-link {
+      overflow: hidden;
+      position: relative;
+      display: inline;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      transition: all .85s ease;
+      -webkit-transition-delay: .6s;
+      transition-delay: .6s;
+      text-align: center; }
+      .portfolio .portfoliowrap .site-link .sitename {
+        padding: 5px 0;
+        font-weight: 500;
+        margin: 15px 0; }
+      .portfolio .portfoliowrap .site-link a {
+        color: #387094;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 30px;
+        border: 2.5px solid #387094;
+        margin: auto; }
+        .portfolio .portfoliowrap .site-link a:hover {
+          transition: .5s;
+          background: rgba(14, 199, 231, 0.8); }
+    .portfolio .portfoliowrap .portfolio-wrap:hover {
+      /*important*/ }
+      .portfolio .portfoliowrap .portfolio-wrap:hover .site-link {
+        height: 50%;
+        top: -50%; }
+      .portfolio .portfoliowrap .portfolio-wrap:hover .site {
+        top: -50%; }
+    .portfolio .portfoliowrap #jm2020 {
+      background: url("/./portfolio/images/gm2020bg1.png");
+      background-position: center;
+      background-size: cover; }
+      .portfolio .portfoliowrap #jm2020 .sitelogo {
+        padding: 30px;
+        background: url("/./portfolio/images/gm2020logo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-top: 30%; }
 
 @media screen and (max-width: 1024px) {
   .main .overlayer {
