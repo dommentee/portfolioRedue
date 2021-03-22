@@ -346,21 +346,22 @@ header {
             border: 1.5px solid #fcfbfb; }
 
 .portfolio {
-  padding: 5% 7%;
+  padding: 5% 7% 15% 7%;
   background-color: #EDEDED; }
   .portfolio .portfoliowrap {
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    padding: 30px 0; }
     .portfolio .portfoliowrap .portfolio-wrap {
+      background: -webkit-linear-gradient(#fcfafa, #fcfbfb);
       width: 33.33%;
-      height: 295px;
+      height: 325px;
       float: left;
       position: relative;
       overflow: hidden;
       transition: all .85s ease;
       -webkit-transition-delay: .6s;
-      transition-delay: .6s;
-      box-shadow: 0 4px 4px #CFCFCF; }
+      transition-delay: .6s; }
     .portfolio .portfoliowrap .site {
       width: 100%;
       height: 100%;
@@ -373,6 +374,7 @@ header {
     .portfolio .portfoliowrap .site-link {
       overflow: hidden;
       position: relative;
+      padding: 7px 0;
       display: inline;
       width: 100%;
       height: 100%;
@@ -407,11 +409,123 @@ header {
       background-position: center;
       background-size: cover; }
       .portfolio .portfoliowrap #jm2020 .sitelogo {
-        padding: 30px;
+        width: 100%;
+        padding: 20px 0;
         background: url("/./portfolio/images/gm2020logo.png");
         background-position: center center;
         background-repeat: no-repeat;
-        margin-top: 30%; }
+        margin-top: 35%; }
+    .portfolio .portfoliowrap #sky {
+      background: url("/./portfolio/images/skybg.png");
+      background-position: center center;
+      background-size: cover; }
+      .portfolio .portfoliowrap #sky .sitelogo {
+        background: url("/./portfolio/images/skylogo.png");
+        width: fit-content;
+        padding: 90px;
+        background-size: cover;
+        margin: 50px auto;
+        background-repeat: no-repeat;
+        background-position: center; }
+    .portfolio .portfoliowrap #uwa {
+      background: -webkit-linear-gradient(top, #5EEF9B, #55F5AF, #55F5E9);
+      background: -moz-linear-gradient(top, #5EEF9B, #55F5AF, #55F5E9);
+      background-color: #55F5E9; }
+      .portfolio .portfoliowrap #uwa .sitelogo {
+        width: fit-content;
+        padding: 70px 25px;
+        margin: 8% auto;
+        border-radius: 50%;
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        color: #EDEDED;
+        border-right: 5px solid #202D85;
+        border-left: 5px solid #EDEDED; }
+        .portfolio .portfoliowrap #uwa .sitelogo:hover {
+          cursor: default; }
+        .portfolio .portfoliowrap #uwa .sitelogo span {
+          width: fit-content;
+          padding: 0  0 0px 50px;
+          color: #202D85;
+          font-weight: 600;
+          border-top: 5px solid #EDEDED; }
+
+.empty {
+  height: 150px;
+  background: #525151;
+  width: 25%;
+  float: left;
+  transform: skewY(30deg); }
+
+.empty-2 {
+  height: 150px;
+  background: #525151;
+  width: 25%;
+  float: right;
+  transform: skewY(-30deg); }
+
+.contact-info {
+  padding: 5% 7%;
+  background: #525151; }
+  .contact-info .title {
+    color: #EDEDED; }
+    .contact-info .title div {
+      background-color: #EDEDED; }
+  .contact-info form {
+    width: 100%;
+    padding: 25px 20px;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rgba(14, 199, 231, 0.8);
+    box-sizing: border-box; }
+    .contact-info form .useriput {
+      width: 100%;
+      margin-bottom: 3px; }
+    .contact-info form #username {
+      padding: 10px; }
+    .contact-info form #useremail {
+      padding: 10px; }
+    .contact-info form #usermessage {
+      text-align: none;
+      padding: 10px;
+      height: 125px;
+      width: 375px;
+      border-style: solid; }
+    .contact-info form .button {
+      color: #EDEDED;
+      padding: 5px 30px;
+      background: transparent;
+      border: 1.5px solid #EDEDED; }
+      .contact-info form .button:hover {
+        cursor: pointer;
+        background: #EDEDED;
+        color: #3D3D3D;
+        border-color: #3D3D3D; }
+
+footer {
+  text-align: center;
+  font-weight: 300;
+  color: #EDEDED;
+  background: #7a7a7a;
+  padding: 50px 0; }
+  footer div {
+    color: #EDEDED;
+    position: absolute;
+    width: fit-content;
+    margin: auto;
+    right: 0;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+    padding: 8px 5px;
+    font-size: 2.2em;
+    background: rgba(228, 19, 106, 0.884); }
+    footer div:hover {
+      background: #EDEDED;
+      color: rgba(228, 19, 106, 0.884); }
+  footer span {
+    color: rgba(14, 199, 231, 0.8); }
 
 @media screen and (max-width: 1024px) {
   .main .overlayer {
@@ -513,9 +627,25 @@ header {
       .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
         margin: 3px auto;
         font-size: 1.2em;
-        padding: 3.5px; } }
+        padding: 3.5px; }
+
+  .portfolio .portfoliowrap .portfolio-wrap {
+    width: 50%; }
+  .portfolio .portfoliowrap #jm2020 .sitelogo {
+    background-size: auto;
+    margin: 40% auto; } }
 @media screen and (max-width: 768px) {
   .main {
+    height: 75vh; }
+
+  .carousel .lines {
+    margin: 0 15px;
+    opacity: .5; }
+  .carousel #one {
+    height: 50vh; }
+  .carousel #two {
+    height: 86vh; }
+  .carousel #three {
     height: 75vh; }
 
   .hero {
@@ -534,6 +664,7 @@ header {
 
   .title {
     padding: 7px 0;
+    margin-bottom: 85px;
     font-size: 1.9em; }
     .title div {
       width: 50px;
@@ -565,7 +696,26 @@ header {
       .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
         font-size: 1em; }
       .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
-        font-size: 1em; } }
+        font-size: 1em; }
+
+  .portfolio .portfoliowrap .portfolio-wrap {
+    width: 50%; }
+  .portfolio .portfoliowrap #jm2020 .sitelogo {
+    background-size: auto;
+    margin: 40% auto; }
+
+  .empty {
+    height: 150px;
+    width: 25%;
+    float: left;
+    transform: skewY(30deg); }
+
+  .empty-2 {
+    height: 150px;
+    background: #525151;
+    width: 25%;
+    float: right;
+    transform: skewY(-30deg); } }
 @media only screen and (max-width: 736px) {
   .main {
     height: 100vh; }
@@ -590,6 +740,16 @@ header {
     header .uinav {
       display: block; }
 
+  .carousel .lines {
+    margin: 0 10px;
+    opacity: .5; }
+  .carousel #one {
+    height: 30vh; }
+  .carousel #two {
+    height: 80vh; }
+  .carousel #three {
+    height: 55vh; }
+
   .mobile-nav {
     float: right;
     display: block;
@@ -609,8 +769,9 @@ header {
       display: none; }
 
   .title {
-    padding: 6px 0;
-    font-size: 1.7em; }
+    padding: 3px 0;
+    font-size: 1.7em;
+    margin-bottom: 60px; }
     .title div {
       width: 45px;
       height: 4px; }
@@ -675,6 +836,38 @@ header {
             .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
               margin: 2px auto;
               padding: 2px;
-              font-size: .9em; } }
+              font-size: .9em; }
+
+  .portfolio {
+    padding: 3% 5%; }
+    .portfolio .portfoliowrap {
+      background: transparent; }
+      .portfolio .portfoliowrap .portfolio-wrap {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 5px;
+        border-radius: 5px; }
+      .portfolio .portfoliowrap .site-link .sitename {
+        padding: 5px 0;
+        margin: 8px 0; }
+      .portfolio .portfoliowrap .site-link a {
+        padding: 6px 60px;
+        border: 2.5px solid #387094;
+        margin: auto; }
+        .portfolio .portfoliowrap .site-link a:hover {
+          transition: .5s;
+          background: rgba(14, 199, 231, 0.8); }
+      .portfolio .portfoliowrap #jm2020 .sitelogo {
+        background-size: auto;
+        margin: 20% auto; }
+      .portfolio .portfoliowrap #sky .sitelogo {
+        padding: 80px;
+        margin: 0 auto; }
+      .portfolio .portfoliowrap #uwa .sitelogo {
+        width: fit-content;
+        padding: 40px 8px;
+        margin: 8% auto;
+        border-radius: 50%;
+        font-size: 1.1em; } }
 
 /*# sourceMappingURL=styles.css.map */
