@@ -630,10 +630,17 @@ footer {
         padding: 3.5px; }
 
   .portfolio .portfoliowrap .portfolio-wrap {
-    width: 50%; }
+    width: 50%;
+    height: 290px; }
   .portfolio .portfoliowrap #jm2020 .sitelogo {
     background-size: auto;
-    margin: 40% auto; } }
+    margin: 40% auto; }
+
+  .empty {
+    width: 20%; }
+
+  .empty-2 {
+    width: 20%; } }
 @media screen and (max-width: 768px) {
   .main {
     height: 75vh; }
@@ -699,23 +706,17 @@ footer {
         font-size: 1em; }
 
   .portfolio .portfoliowrap .portfolio-wrap {
-    width: 50%; }
+    width: 50%;
+    height: 300px; }
   .portfolio .portfoliowrap #jm2020 .sitelogo {
     background-size: auto;
     margin: 40% auto; }
 
   .empty {
-    height: 150px;
-    width: 25%;
-    float: left;
-    transform: skewY(30deg); }
+    width: 20%; }
 
   .empty-2 {
-    height: 150px;
-    background: #525151;
-    width: 25%;
-    float: right;
-    transform: skewY(-30deg); } }
+    width: 20%; } }
 @media only screen and (max-width: 736px) {
   .main {
     height: 100vh; }
@@ -868,6 +869,39 @@ footer {
         padding: 40px 8px;
         margin: 8% auto;
         border-radius: 50%;
-        font-size: 1.1em; } }
+        font-size: 1.1em; }
+
+  .empty {
+    width: 5%; }
+
+  .empty-2 {
+    width: 5%; }
+
+  .contact-info {
+    padding: 3%;
+    width: 100%; }
+    .contact-info form {
+      padding: 20px 10px; }
+      .contact-info form .useriput {
+        width: 100%;
+        margin-bottom: 3px; }
+      .contact-info form #username {
+        padding: 8px; }
+      .contact-info form #useremail {
+        padding: 8px; }
+      .contact-info form #usermessage {
+        padding: 8px;
+        height: 100px;
+        width: 300px; }
+      .contact-info form .button {
+        padding: 6px 35px; }
+
+  footer {
+    font-size: .8em;
+    padding: 20px; }
+    footer div {
+      bottom: 40px;
+      padding: 5px 3px;
+      font-size: 1.9em; } }
 
 /*# sourceMappingURL=styles.css.map */

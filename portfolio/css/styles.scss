@@ -565,9 +565,6 @@ header {
       background-color: #EDEDED;;
     }
   }
-  .formwarp {
-
-  }
   form {
     width: 100%;
     padding: 25px 20px;
@@ -852,6 +849,7 @@ footer {
     .portfoliowrap {
       .portfolio-wrap  {
         width: 50%;
+        height: 290px;
       }
 
       #jm2020 {
@@ -861,6 +859,12 @@ footer {
         }
       }
     }
+  }
+  .empty {
+    width: 20%;
+  }
+  .empty-2 {
+    width: 20%;
   }
   
 
@@ -992,6 +996,7 @@ footer {
     .portfoliowrap {
       .portfolio-wrap  {
         width: 50%;
+        height: 300px;
       }
       #jm2020 {
         .sitelogo {
@@ -1002,24 +1007,12 @@ footer {
     }
   }
   .empty {
-    height: 150px;
-
-    width: 25%;
-    float: left;
-    transform: skewY(30deg)
+    width: 20%;
   }
   .empty-2 {
-    height: 150px;
-    background: #525151 ;
-    width: 25%;
-    float: right;
-    transform: skewY(-30deg)
+    width: 20%;
   }
-  
-  
-
 }
-
 @media only screen and (max-width: 736px) {
   .main {
     height: 100vh;
@@ -1028,8 +1021,6 @@ footer {
     margin-top: 5vh;
   }
 }
-
-
 //mobile
 @media screen and (max-width: 640px) {
   .main {
@@ -1215,7 +1206,6 @@ footer {
         border-radius: 5px; 
       }
       .site-link {
-
         .sitename {
           padding: 5px 0;
           margin: 8px 0;
@@ -1252,10 +1242,48 @@ footer {
           font-size: 1.1em;
         }
       }
-
     }
   }
-  
+  .empty {
+    width: 5%;
+  }
+  .empty-2 {
+    width: 5%;
+  }
+  .contact-info {
+    padding: 3%;
+    width: 100%;
+    form {
+      padding: 20px 10px;
+      .useriput {
+        width: 100%;
+        margin-bottom: 3px;
+      }
+      #username {
+        padding: 8px;
+      }
+      #useremail {
+        padding: 8px;
+      }
+      #usermessage {
+        padding: 8px;
+        height: 100px;
+        width: 300px;
+      } 
+      .button {
+        padding: 6px 35px; 
+      }
+    }
+  }
+  footer  {
+    font-size: .8em;
+    padding: 20px;
+    div {
+      bottom: 40px;
+      padding: 5px 3px;
+      font-size: 1.9em;
+    }
+  }
 
 
 }
