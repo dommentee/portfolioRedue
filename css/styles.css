@@ -1,0 +1,927 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  color: #3D3D3D;
+  font-weight: 300;
+  background: -webkit-linear-gradient(#fcfafa, #fcfbfb);
+  background-color: #EDEDED;
+  -webkit-transform-style: preserve-3d; }
+
+.clear-fix {
+  clear: both; }
+
+.main {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 40px solid #505050; }
+  .main .overlayer {
+    position: relative;
+    height: 95vh;
+    width: 100vw;
+    overflow: hidden;
+    padding: 0 7%; }
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .9em; }
+  header .logo {
+    padding: 60px;
+    background: url("../images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    header nav a {
+      text-decoration: none;
+      font-size: 1.09em;
+      font-weight: 500;
+      color: #387094; }
+    header nav .about-button {
+      margin-right: 15px; }
+      header nav .about-button:hover {
+        color: rgba(14, 199, 231, 0.8); }
+    header nav .contact-button {
+      padding: 3px 20px;
+      border-radius: 2px;
+      border: 2.5px solid #387094; }
+      header nav .contact-button:hover {
+        background: rgba(14, 199, 231, 0.8);
+        transition: .5s; }
+  header .uinav {
+    display: none;
+    cursor: pointer; }
+    header .uinav .bar {
+      width: 31px;
+      height: 5px;
+      margin: 3px 0;
+      background-color: #387094; }
+    header .uinav .disapear {
+      display: none;
+      opacity: 0;
+      transition: .5s;
+      overflow: hidden; }
+    header .uinav .reverse {
+      transform: rotate(-45deg) translate(-7px, 5px);
+      transition: .5s; }
+    header .uinav .reversetwo {
+      transform: rotate(45deg);
+      transition: .5s; }
+
+.mobile-nav {
+  width: 0;
+  height: 100%;
+  float: right;
+  background-color: #e7e7e7;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  right: 0%;
+  left: 0;
+  transition: .5s ease-in-out;
+  display: none; }
+  .mobile-nav a {
+    width: 100%;
+    color: #3D3D3D;
+    display: inline-block;
+    padding: 5px 0;
+    margin: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 500; }
+    .mobile-nav a:hover {
+      background-color: rgba(14, 199, 231, 0.8); }
+
+.closeNav {
+  width: 100%; }
+
+.lineswrap {
+  overflow: hidden;
+  position: absolute;
+  perspective: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+@keyframes cog {
+  25% {
+    -moz-transform: rotateY(-288deg);
+    -ms-transform: rotateY(-288deg);
+    transform: rotateY(-288deg); } }
+.scene {
+  position: relative;
+  width: 20%;
+  height: 100vh;
+  perspective: 500px;
+  transform: rotateZ(-45deg); }
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  -webkit-animation: cog 60s infinite ease-out; }
+  .carousel .lines {
+    float: left;
+    display: inline;
+    width: .2px;
+    margin: 0 30px;
+    opacity: .5; }
+  .carousel #one {
+    background: rgba(228, 19, 106, 0.884);
+    height: 100vh; }
+  .carousel #two {
+    background: rgba(14, 199, 231, 0.8);
+    height: 70vh; }
+  .carousel #three {
+    background: rgba(235, 231, 8, 0.8);
+    height: 80vh; }
+
+.carousel__cell {
+  position: absolute;
+  height: 100vh;
+  text-align: center; }
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px); }
+
+.carousel__cell:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px); }
+
+.carousel__cell:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px); }
+
+.carousel__cell:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px); }
+
+.carousel__cell:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px); }
+
+.carousel__cell:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px); }
+
+.carousel__cell:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px); }
+
+.carousel__cell:nth-child(8) {
+  transform: rotateY(280deg) translateZ(288px); }
+
+.carousel__cell:nth-child(9) {
+  transform: rotateY(320deg) translateZ(288px); }
+
+.hero {
+  margin-top: 18vh; }
+  .hero .hero-greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .hero .hero-greeting #greeting-wrap {
+      white-space: pre-line;
+      font-size: 2.5em;
+      font-weight: 500;
+      color: #387094; }
+    .hero .hero-greeting #cursor {
+      width: 4px;
+      height: 75px;
+      background-color: #616161; }
+    .hero .hero-greeting .flicker-out {
+      opacity: .02;
+      transition: ease-in; }
+  .hero #intro-wrap .intro {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0 0 15px 0; }
+  .hero #intro-wrap #workbuttonwrap {
+    margin: auto;
+    width: auto;
+    text-align: center; }
+    .hero #intro-wrap #workbuttonwrap #workbutton {
+      display: inline-block;
+      text-decoration: none;
+      padding: 15px 25px;
+      color: #387094;
+      font-size: 1.1em;
+      font-weight: 500;
+      border: 2.5px solid #387094; }
+      .hero #intro-wrap #workbuttonwrap #workbutton:hover {
+        transition: .5s;
+        background: rgba(14, 199, 231, 0.8); }
+  .hero .hide {
+    transition: opacity 1.2s ease-out;
+    opacity: 0;
+    height: 0px;
+    overflow: hidden; }
+  .hero .show {
+    opacity: 1;
+    height: auto; }
+  .hero .display-none {
+    transition: opacity 2s ease-out;
+    opacity: 0;
+    height: 0; }
+
+.title {
+  padding: 10px 0;
+  margin-bottom: 95px;
+  font-size: 3em;
+  text-align: center;
+  font-weight: 400; }
+  .title div {
+    width: 60px;
+    height: 5px;
+    background-color: rgba(228, 19, 106, 0.747);
+    margin: 0 auto; }
+
+.about {
+  padding: 5% 7%; }
+  .about h3 {
+    padding: 15px 0;
+    width: 100%;
+    display: inline-block;
+    color: rgba(228, 19, 106, 0.747);
+    font-weight: 400;
+    text-align: center; }
+  .about .aboutwrap {
+    display: flex; }
+    .about .aboutwrap .about-text-wrap {
+      background-color: #EDEDED;
+      width: 35%;
+      padding: 4% 3%; }
+      .about .aboutwrap .about-text-wrap span {
+        color: rgba(228, 19, 106, 0.747);
+        font-size: 3em; }
+      .about .aboutwrap .about-text-wrap #about-text-wrap {
+        font-size: 1.25em;
+        margin: 25px 0 0 0; }
+        .about .aboutwrap .about-text-wrap #about-text-wrap a {
+          display: inline-block;
+          text-decoration: none;
+          color: rgba(228, 19, 106, 0.747);
+          font-weight: 300;
+          margin: 10px 0 0 0; }
+          .about .aboutwrap .about-text-wrap #about-text-wrap a:hover {
+            color: rgba(14, 199, 231, 0.8); }
+    .about .aboutwrap .aboutcontentwrap {
+      width: 65%;
+      display: inline; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap {
+        width: 96%;
+        float: right;
+        display: flex; }
+        .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
+          width: 24.25%;
+          float: left;
+          text-align: center;
+          border: 2px solid #387094;
+          border-radius: 5px;
+          padding: 8px 5px; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile .iconwrap {
+            width: fit-content;
+            margin: 0 auto; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+            font-size: 1.3em;
+            font-weight: 500;
+            padding: 3px 0;
+            color: #387094; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+            font-size: 2.2em;
+            text-align: center; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile .iconwrap-responsive {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto; }
+            .about .aboutwrap .aboutcontentwrap .tilewrap .tile .iconwrap-responsive i:nth-child(2) {
+              margin: 0 2%; }
+        .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(2) {
+          margin: 0 1%; }
+        .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(3) {
+          margin: 0 1% 0 0; }
+      .about .aboutwrap .aboutcontentwrap #toolset {
+        padding-top: 15px;
+        border-radius: 5px;
+        background-color: rgba(14, 199, 231, 0.8); }
+        .about .aboutwrap .aboutcontentwrap #toolset .tile {
+          width: 30%;
+          border: none;
+          color: #fcfbfb;
+          margin: 0 0 0 2.5%; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile .toollogo {
+            color: #3D3D3D;
+            font-size: 1.6em;
+            margin: 10px 0; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+            font-size: 2.3em;
+            width: 100%;
+            padding: 2px; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+            margin: 4px auto;
+            font-size: 1.5em;
+            width: fit-content;
+            padding: 5px 2px 2px 3px;
+            border: 2px solid  #357bb4;
+            font-weight: 500;
+            color: #357bb4; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+            width: fit-content;
+            margin: 4px auto;
+            padding: 3.5px;
+            color: #fcfbfb;
+            font-weight: 500;
+            border: 1.5px solid #fcfbfb; }
+
+.portfolio {
+  padding: 5% 7% 15% 7%;
+  background-color: #EDEDED; }
+  .portfolio .portfoliowrap {
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0; }
+    .portfolio .portfoliowrap .portfolio-wrap {
+      background: -webkit-linear-gradient(#fcfafa, #fcfbfb);
+      width: 33.33%;
+      height: 325px;
+      float: left;
+      position: relative;
+      overflow: hidden;
+      transition: all .85s ease;
+      -webkit-transition-delay: .6s;
+      transition-delay: .6s; }
+    .portfolio .portfoliowrap .site {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 0;
+      overflow: hidden;
+      transition: .85s ease;
+      -webkit-transition-delay: .6s;
+      transition-delay: .6s; }
+    .portfolio .portfoliowrap .site-link {
+      overflow: hidden;
+      position: relative;
+      padding: 7px 0;
+      display: inline;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      transition: all .85s ease;
+      -webkit-transition-delay: .6s;
+      transition-delay: .6s;
+      text-align: center; }
+      .portfolio .portfoliowrap .site-link .sitename {
+        padding: 5px 0;
+        font-weight: 500;
+        margin: 15px 0; }
+      .portfolio .portfoliowrap .site-link a {
+        color: #387094;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 30px;
+        border: 2.5px solid #387094;
+        margin: auto; }
+        .portfolio .portfoliowrap .site-link a:hover {
+          transition: .5s;
+          background: rgba(14, 199, 231, 0.8); }
+    .portfolio .portfoliowrap .portfolio-wrap:hover {
+      /*important*/ }
+      .portfolio .portfoliowrap .portfolio-wrap:hover .site-link {
+        height: 50%;
+        top: -50%; }
+      .portfolio .portfoliowrap .portfolio-wrap:hover .site {
+        top: -50%; }
+    .portfolio .portfoliowrap #jm2020 {
+      background: url("/./portfolio/images/gm2020bg1.png");
+      background-position: center;
+      background-size: cover; }
+      .portfolio .portfoliowrap #jm2020 .sitelogo {
+        width: 100%;
+        padding: 20px 0;
+        background: url("/./portfolio/images/gm2020logo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-top: 35%; }
+    .portfolio .portfoliowrap #sky {
+      background: url("/./portfolio/images/skybg.png");
+      background-position: center center;
+      background-size: cover; }
+      .portfolio .portfoliowrap #sky .sitelogo {
+        background: url("/./portfolio/images/skylogo.png");
+        width: fit-content;
+        padding: 90px;
+        background-size: cover;
+        margin: 50px auto;
+        background-repeat: no-repeat;
+        background-position: center; }
+    .portfolio .portfoliowrap #uwa {
+      background: -webkit-linear-gradient(top, #5EEF9B, #55F5AF, #55F5E9);
+      background: -moz-linear-gradient(top, #5EEF9B, #55F5AF, #55F5E9);
+      background-color: #55F5E9; }
+      .portfolio .portfoliowrap #uwa .sitelogo {
+        width: fit-content;
+        padding: 70px 25px;
+        margin: 8% auto;
+        border-radius: 50%;
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        color: #EDEDED;
+        border-right: 5px solid #202D85;
+        border-left: 5px solid #EDEDED; }
+        .portfolio .portfoliowrap #uwa .sitelogo:hover {
+          cursor: default; }
+        .portfolio .portfoliowrap #uwa .sitelogo span {
+          width: fit-content;
+          padding: 0  0 0px 50px;
+          color: #202D85;
+          font-weight: 600;
+          border-top: 5px solid #EDEDED; }
+
+.empty {
+  height: 150px;
+  background: #525151;
+  width: 25%;
+  float: left;
+  transform: skewY(30deg); }
+
+.empty-2 {
+  height: 150px;
+  background: #525151;
+  width: 25%;
+  float: right;
+  transform: skewY(-30deg); }
+
+.contact-info {
+  padding: 5% 7%;
+  background: #525151; }
+  .contact-info .title {
+    color: #EDEDED; }
+    .contact-info .title div {
+      background-color: #EDEDED; }
+  .contact-info form {
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rgba(14, 199, 231, 0.8);
+    box-sizing: border-box; }
+    .contact-info form .useriput {
+      width: 100%;
+      margin-bottom: 3px; }
+    .contact-info form #username {
+      padding: 10px; }
+    .contact-info form #useremail {
+      padding: 10px; }
+    .contact-info form #usermessage {
+      text-align: none;
+      padding: 10px;
+      height: 125px;
+      width: 375px;
+      border-style: solid; }
+    .contact-info form .button {
+      color: #EDEDED;
+      padding: 5px 30px;
+      background: transparent;
+      border: 1.5px solid #EDEDED; }
+      .contact-info form .button:hover {
+        cursor: pointer;
+        background: #EDEDED;
+        color: #3D3D3D;
+        border-color: #3D3D3D; }
+  .contact-info #status {
+    width: fit-content;
+    padding: 8px 180px;
+    margin: 3px auto;
+    border-radius: 5px;
+    font-weight: 400; }
+  .contact-info #status.sucess {
+    background-color: rgba(221, 236, 16, 0.897);
+    animation: status 4s ease forwards; }
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all; }
+  90% {
+    opacity: 1;
+    pointer-events: all; }
+  100% {
+    opacity: 0;
+    pointer-events: none; } }
+footer {
+  text-align: center;
+  font-weight: 300;
+  color: #EDEDED;
+  background: #7a7a7a;
+  padding: 50px 0; }
+  footer div {
+    color: #EDEDED;
+    position: absolute;
+    width: fit-content;
+    margin: auto;
+    right: 0;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+    padding: 8px 5px;
+    font-size: 2.2em;
+    background: rgba(228, 19, 106, 0.884);
+    transition: .3s ease; }
+    footer div:hover {
+      background: #EDEDED;
+      color: rgba(228, 19, 106, 0.884); }
+  footer span {
+    color: rgba(14, 199, 231, 0.8); }
+
+@media screen and (max-width: 1024px) {
+  .main .overlayer {
+    height: 75vh; }
+
+  .hero {
+    margin-top: 19vh; }
+    .hero .hero-greeting #cursor {
+      width: 4px;
+      height: 75px;
+      background-color: #616161; }
+    .hero #intro-wrap #workbuttonwrap #workbutton {
+      padding: 15px 25px;
+      color: #387094;
+      font-size: 1.1em;
+      font-weight: 500; }
+
+  .about {
+    padding: 4% 7%; }
+    .about .aboutwrap .about-text-wrap span {
+      font-size: 2.5em; }
+    .about .aboutwrap .about-text-wrap #about-text-wrap {
+      font-size: 1.2em; }
+    .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+      font-size: 1.2em; }
+    .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+      font-size: 2.1em; }
+    .about .aboutwrap .aboutcontentwrap #toolset {
+      padding-top: 13px; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+        font-size: 2.1em; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+        margin: 3px auto;
+        font-size: 1.4em;
+        width: fit-content; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+        margin: 3px auto;
+        padding: 3.5px; } }
+@media only screen and (max-width: 823px) {
+  .main {
+    border-bottom: 20px solid #505050; }
+    .main .overlayer {
+      height: 90vh; }
+
+  header .logo {
+    padding: 45px; }
+  header nav .contact-button {
+    font-size: .8em; }
+
+  .hero {
+    margin-top: 8vh; }
+    .hero .hero-greeting #greeting-wrap {
+      white-space: pre-line;
+      font-size: 1.6em;
+      font-weight: 500; }
+    .hero .hero-greeting #cursor {
+      width: 2.5px;
+      height: 35px;
+      background-color: #616161; }
+    .hero #intro-wrap .intro {
+      font-size: 1.3em; }
+    .hero #intro-wrap #workbuttonwrap #workbutton {
+      padding: 5px 9px;
+      color: #387094;
+      font-size: 1em;
+      font-weight: 500; }
+
+  .title {
+    padding: 7px 0;
+    font-size: 2em; }
+    .title div {
+      width: 50px;
+      height: 4px; }
+
+  .about {
+    padding: 3% 7%; }
+    .about .aboutwrap .about-text-wrap span {
+      font-size: 1.9em; }
+    .about .aboutwrap .about-text-wrap #about-text-wrap {
+      font-size: 1.1em;
+      margin: 15px 0 0 0; }
+      .about .aboutwrap .about-text-wrap #about-text-wrap a {
+        margin: 7px 0 0 0; }
+    .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
+      padding: 5px 3px;
+      font-size: .85em; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+        font-size: .9em; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+        font-size: 1.5em; }
+    .about .aboutwrap .aboutcontentwrap #toolset {
+      padding-top: 9px; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+        font-size: 2em; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+        margin: 3px auto;
+        font-size: 1.2em;
+        width: fit-content; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+        margin: 3px auto;
+        font-size: 1.2em;
+        padding: 3.5px; }
+
+  .portfolio .portfoliowrap .portfolio-wrap {
+    width: 50%;
+    height: 290px; }
+  .portfolio .portfoliowrap #jm2020 .sitelogo {
+    background-size: auto;
+    margin: 40% auto; }
+
+  .empty {
+    width: 20%; }
+
+  .empty-2 {
+    width: 20%; } }
+@media screen and (max-width: 768px) {
+  .main {
+    height: 75vh; }
+
+  .carousel .lines {
+    margin: 0 15px;
+    opacity: .5; }
+  .carousel #one {
+    height: 50vh; }
+  .carousel #two {
+    height: 86vh; }
+  .carousel #three {
+    height: 75vh; }
+
+  .hero {
+    margin-top: 15vh; }
+    .hero .hero-greeting #greeting-wrap {
+      font-size: 2em; }
+    .hero .hero-greeting #cursor {
+      width: 3px;
+      height: 60px;
+      background-color: #616161; }
+    .hero #intro-wrap .intro {
+      font-size: 1.7em;
+      padding: 0 0 10px 0; }
+    .hero #intro-wrap #workbuttonwrap #workbutton {
+      padding: 10px 23px; }
+
+  .title {
+    padding: 7px 0;
+    margin-bottom: 85px;
+    font-size: 1.9em; }
+    .title div {
+      width: 50px;
+      height: 4px; }
+
+  .about {
+    padding: 3% 7%; }
+    .about h3 {
+      padding: 10px 0;
+      font-size: 1em; }
+    .about .aboutwrap .about-text-wrap span {
+      font-size: 1.7em; }
+    .about .aboutwrap .about-text-wrap #about-text-wrap {
+      font-size: 1em;
+      margin: 12px 0 0 0; }
+      .about .aboutwrap .about-text-wrap #about-text-wrap a {
+        margin: 5px 0 0 0; }
+    .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
+      padding: 4px 2px;
+      font-size: .8em; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+        font-size: .9em; }
+      .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+        font-size: 1.2em; }
+    .about .aboutwrap .aboutcontentwrap #toolset {
+      padding-top: 9px; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+        font-size: 1.7em; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+        font-size: 1em; }
+      .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+        font-size: 1em; }
+
+  .portfolio .portfoliowrap .portfolio-wrap {
+    width: 50%;
+    height: 300px; }
+  .portfolio .portfoliowrap #jm2020 .sitelogo {
+    background-size: auto;
+    margin: 40% auto; }
+
+  .empty {
+    width: 20%; }
+
+  .empty-2 {
+    width: 20%; } }
+@media only screen and (max-width: 736px) {
+  .main {
+    height: 100vh; }
+
+  .hero {
+    margin-top: 5vh; } }
+@media screen and (max-width: 640px) {
+  .main {
+    height: 65vh; }
+    .main .overlayer {
+      padding: 0 5%; }
+
+  header {
+    padding: 5px 0;
+    font-size: .5em; }
+    header .logo {
+      padding: 45px; }
+    header nav .about-button {
+      display: none; }
+    header nav .contact-button {
+      display: none; }
+    header .uinav {
+      display: block; }
+
+  .carousel .lines {
+    margin: 0 10px;
+    opacity: .5; }
+  .carousel #one {
+    height: 30vh; }
+  .carousel #two {
+    height: 80vh; }
+  .carousel #three {
+    height: 55vh; }
+
+  .mobile-nav {
+    float: right;
+    display: block;
+    top: 12vh; }
+
+  .hero {
+    margin-top: 15vh; }
+    .hero .hero-greeting #greeting-wrap {
+      font-size: 1.2em; }
+    .hero .hero-greeting #cursor {
+      width: 2px;
+      height: 35px; }
+    .hero #intro-wrap .intro {
+      font-size: 1em;
+      padding: 0 0 15px 0; }
+    .hero #intro-wrap #workbuttonwrap #workbutton {
+      display: none; }
+
+  .title {
+    padding: 3px 0;
+    font-size: 1.7em;
+    margin-bottom: 60px; }
+    .title div {
+      width: 45px;
+      height: 4px; }
+
+  .about {
+    padding: 3% 5%; }
+    .about h3 {
+      padding: 10px 0;
+      font-size: 1em; }
+    .about .aboutwrap {
+      display: inline-block; }
+      .about .aboutwrap .about-text-wrap {
+        background-color: transparent;
+        width: 100%;
+        text-align: center; }
+        .about .aboutwrap .about-text-wrap span {
+          font-size: 1.5em;
+          font-weight: 400; }
+        .about .aboutwrap .about-text-wrap #about-text-wrap {
+          font-size: 1.1em;
+          margin: 12px 0; }
+          .about .aboutwrap .about-text-wrap #about-text-wrap a {
+            margin: 9px 0 0 0; }
+      .about .aboutwrap .aboutcontentwrap {
+        padding: 0; }
+        .about .aboutwrap .aboutcontentwrap h3 {
+          color: #3D3D3D; }
+        .about .aboutwrap .aboutcontentwrap .tilewrap {
+          width: 100%;
+          display: inline; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
+            width: 48.5%;
+            height: 100px;
+            font-size: .8em;
+            padding: 4px; }
+            .about .aboutwrap .aboutcontentwrap .tilewrap .tile span {
+              font-size: .9em; }
+            .about .aboutwrap .aboutcontentwrap .tilewrap .tile i {
+              font-size: 1.2em; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(1) {
+            margin: 0% 3% 3% 0; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(2) {
+            margin: 0 0 3% 0; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(3) {
+            margin-right: 3%; }
+          .about .aboutwrap .aboutcontentwrap .tilewrap .tile:nth-child(4) {
+            margin: 0; }
+        .about .aboutwrap .aboutcontentwrap #toolset {
+          padding-top: 0; }
+          .about .aboutwrap .aboutcontentwrap #toolset .tile {
+            display: flex;
+            height: fit-content;
+            padding: 4px; }
+            .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap {
+              padding: 0; }
+              .about .aboutwrap .aboutcontentwrap #toolset .tile .iconwrap i {
+                font-size: 1.5em; }
+            .about .aboutwrap .aboutcontentwrap #toolset .tile #ts {
+              margin: 2px auto;
+              font-size: .9em;
+              padding: 3px 1px 1px 2px; }
+            .about .aboutwrap .aboutcontentwrap #toolset .tile #ps {
+              margin: 2px auto;
+              padding: 2px;
+              font-size: .9em; }
+
+  .portfolio {
+    padding: 3% 5%; }
+    .portfolio .portfoliowrap {
+      background: transparent; }
+      .portfolio .portfoliowrap .portfolio-wrap {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 5px;
+        border-radius: 5px; }
+      .portfolio .portfoliowrap .site-link .sitename {
+        padding: 5px 0;
+        margin: 8px 0; }
+      .portfolio .portfoliowrap .site-link a {
+        padding: 6px 60px;
+        border: 2.5px solid #387094;
+        margin: auto; }
+        .portfolio .portfoliowrap .site-link a:hover {
+          transition: .5s;
+          background: rgba(14, 199, 231, 0.8); }
+      .portfolio .portfoliowrap #jm2020 .sitelogo {
+        background-size: auto;
+        margin: 20% auto; }
+      .portfolio .portfoliowrap #sky .sitelogo {
+        padding: 80px;
+        margin: 0 auto; }
+      .portfolio .portfoliowrap #uwa .sitelogo {
+        width: fit-content;
+        padding: 40px 8px;
+        margin: 8% auto;
+        border-radius: 50%;
+        font-size: 1.1em; }
+
+  .empty {
+    width: 5%; }
+
+  .empty-2 {
+    width: 5%; }
+
+  .contact-info {
+    padding: 3%;
+    width: 100%; }
+    .contact-info form {
+      padding: 20px 10px; }
+      .contact-info form .useriput {
+        width: 100%;
+        margin-bottom: 3px; }
+      .contact-info form #username {
+        padding: 8px; }
+      .contact-info form #useremail {
+        padding: 8px; }
+      .contact-info form #usermessage {
+        padding: 8px;
+        height: 100px;
+        width: 300px; }
+      .contact-info form .button {
+        padding: 6px 35px; }
+
+  footer {
+    font-size: .8em;
+    padding: 20px; }
+    footer div {
+      bottom: 40px;
+      padding: 5px 3px;
+      font-size: 1.9em; } }
+
+/*# sourceMappingURL=styles.css.map */
