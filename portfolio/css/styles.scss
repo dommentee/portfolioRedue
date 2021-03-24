@@ -568,6 +568,7 @@ header {
   form {
     width: 100%;
     padding: 25px 20px;
+    border-radius: 5px;
     width: fit-content;
     margin: 0 auto;
     background-color:  rgba(14, 199, 231, 0.8) ;
@@ -603,6 +604,33 @@ header {
       }    
     }
   }
+  #status {
+    width: fit-content;
+    padding: 8px 180px;
+    margin: 3px auto;
+    border-radius: 5px;
+    font-weight: 400;
+  }
+  #status.sucess {
+    background-color:rgba(221, 236, 16, 0.897);
+    animation: status 4s ease forwards;
+  }
+  
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+  }
 }
 footer {
   text-align: center;
@@ -622,6 +650,7 @@ footer {
     padding: 8px 5px;
     font-size: 2.2em;
     background: rgba(228, 19, 106, 0.884);
+    transition: .3s ease;
     &:hover {
       background: #EDEDED;
       color: rgba(228, 19, 106, 0.884)
