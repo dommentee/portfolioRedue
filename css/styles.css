@@ -142,13 +142,13 @@ header {
     margin: 0 30px;
     opacity: .5; }
   .carousel #one {
-    background: rgba(228, 19, 106, 0.884);
+    background-color: rgba(228, 19, 106, 0.884);
     height: 100vh; }
   .carousel #two {
-    background: rgba(14, 199, 231, 0.8);
+    background-color: rgba(14, 199, 231, 0.8);
     height: 70vh; }
   .carousel #three {
-    background: rgba(235, 231, 8, 0.8);
+    background-color: rgba(235, 231, 8, 0.8);
     height: 80vh; }
 
 .carousel__cell {
@@ -763,7 +763,7 @@ footer {
 
   .carousel .lines {
     margin: 0 10px;
-    opacity: .5; }
+    opacity: 1; }
   .carousel #one {
     height: 30vh; }
   .carousel #two {

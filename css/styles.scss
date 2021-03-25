@@ -172,15 +172,15 @@ header {
     //background-color: cornflowerblue;
   }
   #one {
-    background: rgba(228, 19, 106, 0.884);
+    background-color: rgba(228, 19, 106, 0.884);
     height: 100vh;
   }
   #two {
-    background: rgba(14, 199, 231, 0.8);
+    background-color: rgba(14, 199, 231, 0.8);
     height: 70vh;
   }
   #three {
-    background: rgba(235, 231, 8, 0.8);
+    background-color: rgba(235, 231, 8, 0.8);
     height: 80vh;
   }
 }
@@ -1079,7 +1079,7 @@ footer {
   .carousel {
     .lines {
       margin: 0 10px;
-      opacity: .5;
+      opacity: 1;
     }
     #one {
       height: 30vh;
