@@ -738,6 +738,9 @@ footer {
 
   .empty-2 {
     width: 20%; } }
+@media (orientation: landscape) and (max-width: 926px) {
+  .main {
+    height: 120vh; } }
 @media only screen and (max-width: 736px) {
   .main {
     height: 100vh; }
