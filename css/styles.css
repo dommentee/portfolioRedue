@@ -762,7 +762,8 @@ footer {
       display: block; }
 
   .carousel .lines {
-    margin: 0 10px;
+    width: 3px;
+    margin: 0 8px;
     opacity: 1; }
   .carousel #one {
     height: 30vh; }
