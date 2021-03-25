@@ -138,9 +138,9 @@ header {
   .carousel .lines {
     float: left;
     display: inline;
-    width: .2px;
+    width: .4px;
     margin: 0 30px;
-    opacity: .5; }
+    opacity: .7; }
   .carousel #one {
     background-color: rgba(228, 19, 106, 0.884);
     height: 100vh; }
