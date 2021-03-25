@@ -374,11 +374,13 @@ header {
     .portfolio .portfoliowrap .site-link {
       overflow: hidden;
       position: relative;
+      appearance: none;
       padding: 7px 0;
-      display: inline;
       width: 100%;
       height: 100%;
       top: 0;
+      transition-property: width;
+      transition-duration: 2s;
       transition: all .85s ease;
       -webkit-transition-delay: .6s;
       transition-delay: .6s;
