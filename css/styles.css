@@ -137,8 +137,7 @@ header {
   -webkit-animation: cog 60s infinite ease-out; }
   .carousel .lines {
     float: left;
-    display: inline;
-    width: .4px;
+    width: 5px;
     margin: 0 30px;
     opacity: .7; }
   .carousel #one {

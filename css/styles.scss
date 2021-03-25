@@ -164,12 +164,10 @@ header {
 
   .lines {
     float: left;
-    display: inline;
-    width: .4px;
-    //background: rgba(163, 162, 162, 0.8);
+    //display: inline;
+    width: 5px;
     margin: 0 30px;
     opacity: .7;
-    //background-color: cornflowerblue;
   }
   #one {
     background-color: rgba(228, 19, 106, 0.884);
@@ -273,9 +271,6 @@ header {
 .title {
   padding: 10px 0;;
   margin-bottom: 95px;
-  //color: #fcfbfb;
-  //margin: 20px 0 40px  0;
-  //color: rgba(228, 19, 106, 0.747);
   font-size: 3em;
   text-align: center;
   font-weight: 400;
@@ -450,7 +445,6 @@ header {
       position: relative;
       appearance: none;
       padding: 7px 0;
-      //display: inline;
       width: 100%;
       height: 100%;
       top: 0;
