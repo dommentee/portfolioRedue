@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/skyechelon.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400|Megrim" rel="stylesheet">
+	<title>SKY FLY</title>
+</head>
+<body>
+
+	<div class="home-page">
+		
+		<div class="nav-bar" style="float: right" id="myNavbar">
+
+			<a  class="firstanchor"href="#">Destinations</a>
+			<a class="midanchor" href="#">Services</a>
+			<a href="#">Fleet</a>
+			<a class="booknow" href="#" style="float: right">Book now</a>
+			<a class="midanchor" href="#" style="float: right">Contact</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+				<div class="container"onclick="closeFunction(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>	
+			</a>	
+		</div><!--end of nav-bar/-->
+
+		<div class="logo">
+			<div class="clear-fix"></div>
+		</div>
+
+		<div class="hero-intro">
+
+			Travel the world on an airline that is uniquely tailored to you.
+		<div class="clear-fix"></div>
+		</div>
+
+		<div class="title" >
+			Sky Echelon
+		</div>
+
+	</div>
+
+	<div class="hero-about">
+
+		<div class="info-wrap">
+
+			<span>What we do</span>
+			We provide a private jet experience rivalled by none.
+
+		</div>
+
+		<div class="info-wrap">
+
+			<span>How it's done</span>
+			Our host have to power to decide how, when and where to embark on their journey.
+		</div>
+
+	</div><!--end of the info-wrap-->
+	
+	<div class="services-wrap">
+
+		<div class="selection-wrap">
+
+   	 		<a href="">
+
+   	 			<div class="selection-type traditional" onmouseover="styles(landingOptionOne)" onmouseout="styles('Plan the perfect trip(s) to the smallest details with not only destinations but also time. Create the adventure and memories that will last a lifetime.')">
+   	 				TRADITIONALIST
+    			</div>
+
+   	 		</a>
+
+   	 		<a href="">
+   	 			
+   	 			<div class="selection-type yolo" onmouseover="styles(landingOptionTwo)" onmouseout="styles('Plan the perfect trip(s) to the smallest details with not only destinations but also time. Create the adventure and memories that will last a lifetime.')">YOLO
+    			</div>
+
+   	 		</a>
+
+   	 		<a href="">
+   	 			
+   	 			<div class="selection-type continent" onmouseover="styles(landingOptionThree)" onmouseout="styles('Plan the perfect trip(s) to the smallest details with not only destinations but also time. Create the adventure and memories that will last a lifetime.')"> CONTINENTAL
+    			</div>
+
+   	 		</a>
+   	 	</div>
+
+
+   	 	<div class="default-wrap">
+
+   	 		<div class="book-services">
+   	 			Service <span><i class="fa fa-fighter-jet"></i></span> Options
+   	 		</div>	
+
+   	 		<div id="default-selection">
+
+      			Plan the perfect trip(s) to the smallest details with not only destinations but also time. Create the adventure and memories that will last a lifetime.
+
+   	 		</div>
+
+   	 	</div>	
+
+   	 	<div class="clear-fix"></div>
+	</div>
+
+	<div class="para-banner">
+
+		<div class="info-wrap">Be the explorer and adventurer you’ve always wanted to be.</div>
+
+		<div class="clear-fix"></div>
+
+	</div>
+
+	<footer>
+
+		<div class="title" >
+			Sky Echelon
+		</div>
+
+		<div class="developer">
+			&copy By <a href="https://www.dommentee.com"> Domacor Mentee </a>
+		</div>	
+		<div class="clear-fix"></div>
+		
+	</footer>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "nav-bar") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav-bar";
+    }
+}
+</script>
+
+<script>
+function closeFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+
+<script>
+  
+  var landingOptionOne = "With a large selection of destinations, travel from point A to B in privacy and get to your desired place hassle free with style, luxury and comfort.";
+
+  var landingOptionTwo = "Business or leisure? Why not both? Whether a relaxed business errand or a party in the sky, this is an airline that specilazes in the finer things.";
+
+  var landingOptionThree = "Where and when? Be the captain and select the flightpath to a number of cities and exotic locations. Fly anywhere in any order at any time.";
+
+    function styles(description) {
+        console.log(description);
+        document.getElementById('default-selection').innerHTML = description;
+    }
+</script>
+
+
+</body>
+</html>

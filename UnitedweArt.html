@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/unitedstyles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,800,900|Megrim" rel="stylesheet">
+	<title>Created for creators</title>
+</head>
+
+<body>
+	<nav>
+		<a class="access-cntent" href="#">
+			MY ARTIST
+		</a>
+
+		<a class="access-cntent" href="#storyboard">
+			ARCHIVE
+		</a>
+
+		<div class="ui-wrap">
+
+			<div class="userform" id="mdlBtn">
+				Sign in
+			</div>
+			<!--end of userform/-->
+
+			<div class="uinav" onclick="openNav()">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+
+		</div>
+	</nav><!--end of nav wrap/-->
+
+	<div id="clientlogin" class="loginmod">
+
+		<div class="modalwrap">
+
+			<span class="closemodal">
+
+				<div class="bar"></div>
+       			<div class="bar two"></div>
+
+			</span>
+
+			<div class="modalcontent">
+
+				<div class="formintro">
+					<h1>CALLING ALL ARTISTS!</h1>
+
+        			<p>Create, share, and connect with other artist. Get inspired while inspiring, teaching and learning from each other.</p>
+
+				</div>
+
+				<div class="formintro" id="formwrap">
+
+					<form>
+
+        				<h1>United We Art</h1>
+
+        				<span class="ua-experience">Created for creators.</span>
+
+        				<input class="user" type="text" placeholder="Email"></input>
+
+        				<br>
+
+        				<input class="user" type="password" placeholder="Password"/>
+
+        				<br>
+
+        				<div class="log-on">
+
+        					<a class="sign-in" href="">SIGN IN</a> OR <a href="">JOIN NOW!</a>
+        				</div>		
+
+        				<div id="checkbox">
+        					<input type="checkbox"/>
+
+        					<span>Keep me signed in </span>
+        				</div>
+        
+        				<div class="forgot-password">
+
+        					<a href="">forgot password? <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+
+        				</div>	
+
+        			</form>
+
+        		</div><!--end of formwrap-->  
+					
+			</div><!--end of madalcontent/-->
+
+		</div><!--end of modalwrap/-->
+
+	</div><!-- end of clientlogin/-->
+
+	<!--begining of nav/-->
+	<div id="myNav" class="navOverlay">
+
+		<div class="navContent">
+
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+				<div class="bar"></div>
+				<div class="bar two"></div>
+			</a>
+
+			<div class="navselections">
+
+				<div class="catego-wrap">
+  					<h2>CATEGORIES</h2>
+    				<a href="#">Animation</a>
+    				<a href="#">Crafty</a>
+    				<a href="#">Freehand</a>
+    				<a href="#">Manga/comics</a>
+  				</div>
+
+  				<div class="catego-wrap">
+  					<h2>THE COMMUNITY</h2>
+    				<a href="#">Top Views</a> 
+    				<a href="#">Trending</a>
+    				<a href="#">Hashtags</a>
+    				<a href="#">Search artist </a>
+  				</div>
+
+  				<div class="catego-wrap">
+
+  					<h2>U.A</h2>
+    				<a href="#">About</a>
+    				<a href="#">sign up</a>
+    				<a href="#">login</a>
+    				<a href="#">Contact</a>
+
+  				</div>
+
+			</div>
+
+		</div>	
+
+	</div><!--end of nav/-->
+
+	<div class="hero-mobile"><!--will be be landing page in mobile and replace slideer/-->
+
+		<div class="hero-intro">
+
+			<span>
+
+            	EXERCISE
+            	<br>
+           		YOUR
+            	<br> 
+            	CREATIVE
+            	<br> 
+           		SIDE!
+
+          	</span>
+
+          	<p>
+            	Express your self any and every way. Whether it's free hand, painting, sculpture or animation; show yourself through your preferred media and share your story. 
+          	</p>
+
+          	<a class="get-started" href="#">GET STARTED</a>
+
+		</div>
+
+			<div class="logo">
+				UNITED
+				<br>
+				<span>we ART</span>
+			</div>
+
+	</div>
+
+	<!--begining of automatic slideshow/-->
+	<div class="slide-container">
+
+		<div class="mySlides fade" id="slide-one">
+
+			<div class="hero-intro">
+				<span>
+
+            		EXERCISE
+            		<br>
+           			YOUR
+            		<br> 
+            		CREATIVE
+            		<br> 
+           			SIDE!
+
+          		</span>
+
+          		<p>
+            		Express your self any and every way. Whether it's free hand, painting, sculpture or animation; show yourself through your preferred media and share your story. 
+          		</p>
+
+          		<a class="get-started" href="#">GET STARTED</a>
+
+			</div>
+		
+			<div class="logo">
+				UNITED
+				<br>
+				<span>we ART</span>
+			</div>
+
+		</div><!--end of slide one/-->
+
+		<div class="mySlides fade" id="slide-two">
+			<span>
+				CREATE, SHARE
+				<br>
+				AND LINK UP!
+			</span>
+
+			<p>
+            	Share your creation with friends or show the world what you can do and connect with people that have the same passoin.
+         	</p>
+
+         	<div class="upload-ui">
+
+          		<a class="get-started" href="#">Upload work</a>
+
+            	<a class="get-started" href="#">View story board</a>
+
+          	</div>
+		</div>
+
+		<div class="mySlides fade" id="slide-three">
+			<p>
+            	Connect with novice and skilled artist known for ground breaking animated films, mangas, comics and much more.  
+          	</p>
+
+          	<a class="get-started" href="#">Search artist</a>
+
+		</div>
+
+		<div class="selector">
+			<div class="dotwrap">
+  				<span class="dot" onclick="currentSlide(1)"></span> 
+  				<span class="dot" onclick="currentSlide(2)"></span> 
+  				<span class="dot" onclick="currentSlide(3)"></span>
+  			</div>	 
+
+  		</div>	
+		
+	</div>
+	<!--end of automatic slideshow/-->
+
+	<div class="archive" id="storyboard">
+		ARCHIVE
+	</div>
+
+	<div class="main-content">
+
+		<div class="artWrk">
+
+			<div class="artist-content" id="box1">
+
+				<div class="overlay"></div>
+
+			</div>
+
+			<div class="artist-info">
+
+				<div class="info">
+					Work By:
+					<br>
+
+					Domacor Mentee
+				</div>
+
+			</div>	
+		</div>	
+
+		<div class="artWrk">
+
+			<div class="artist-content" id="box2">
+
+				<div class="overlay"></div>
+
+			</div>
+
+			<div class="artist-info">
+
+				<div class="info">
+					Work By:
+					<br>
+
+					Domacor Mentee
+				</div>
+
+			</div>	
+		</div>
+
+		<div class="artWrk">
+
+			<div class="artist-content" id="box3">
+
+				<div class="overlay"></div>
+
+			</div>
+
+			<div class="artist-info">
+
+				<div class="info">
+					Work By:
+					<br>
+
+					Domacor Mentee
+				</div>
+
+			</div>	
+		</div>	
+
+		<div class="artWrk">
+
+			<div class="artist-content" id="box4">
+
+				<div class="overlay"></div>
+
+			</div>
+
+			<div class="artist-info">
+
+				<div class="info">
+					Work By:
+					<br>
+
+					Domacor Mentee
+				</div>
+
+			</div>	
+		</div>
+
+		<div class="artWrk">
+
+			<div class="artist-content" id="box5">
+
+				<div class="overlay"></div>
+
+			</div>
+
+			<div class="artist-info">
+
+				<div class="info">
+					Work By:
+					<br>
+
+					Domacor Mentee
+				</div>
+
+			</div>	
+		</div>
+
+		<div class="artWrk">
+
+			<div class="artist-content" id="box6">
+
+				<div class="overlay"></div>
+
+			</div>
+
+			<div class="artist-info">
+
+				<div class="info">
+					Work By:
+					<br>
+
+					Domacor Mentee
+				</div>
+
+			</div>	
+		</div>	
+
+	</div>
+
+	<div class="load-more">
+      	<h3>load more</h3>
+    </div>
+
+    <footer>
+
+		<div class="logo">
+			UNITED
+			<br>
+			<span>we ART</span>
+		</div>
+
+		<div class="developer">
+			&copy By <a href="https://www.dommentee.com"> Domacor Mentee </a>
+		</div>	
+		<div class="clear-fix"></div>
+		
+	</footer>
+
+	<!--start of modal script/-->
+ 	<script>
+  		var modal = document.getElementById('clientlogin');
+  		var btn = document.getElementById("mdlBtn");
+  		var span = document.getElementsByClassName("closemodal")[0];
+  		btn.onclick = function() {
+    	modal.style.display = "block"
+  		}
+  		span.onclick = function() {
+    		modal.style.display = "none";
+  		}
+  		window.onclick = function(event) {
+    		if (event.target == modal) {
+     	 	modal.style.display = "none";
+    		}
+  		}
+  	</script>
+	<!--end of login modal script/-->
+
+	<!--script for opeing and closing nav/-->
+	<script>
+		function openNav() {
+    	document.getElementById("myNav").style.width = "100%";
+		}
+		function closeNav() {
+    	document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+	<!--end of script for opeing and closing nav/-->
+
+	<!--script for slideshow/-->
+		<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function currentSlide(n) {
+ 	showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+  		var i;
+  		var slides = document.getElementsByClassName("mySlides");
+  		var dots = document.getElementsByClassName("dot");
+  		if (n > slides.length) {slideIndex = 1}    
+  		if (n < 1) {slideIndex = slides.length}
+  		for (i = 0; i < slides.length; i++) {
+      		slides[i].style.display = "none";  
+  		}
+  		for (i = 0; i < dots.length; i++) {
+      		dots[i].className = dots[i].className.replace(" active", "");
+  		}
+  		slides[slideIndex-1].style.display = "block";  
+  		dots[slideIndex-1].className += " active";
+	}
+	autoSlide();
+	function autoSlide() {
+		var i;
+		var dots = document.getElementsByClassName("dot");
+		var slides = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < slides.length; i++) {
+     		slides[i].style.display = "none";  
+  		}
+  		for (i = 0; i < dots.length; i++) {
+  			dots[i].className = dots[i].className.replace(" active", "");
+  		}
+  		if (slideIndex > slides.length) {slideIndex = 1} 
+  			slides[slideIndex-1].style.display = "block"; 
+  			dots[slideIndex-1].className += " active"; 
+  			slideIndex++;
+			setTimeout(autoSlide, 8500);
+	}
+
+	</script>
+	<!--end of script for sldeshow/-->
+
+</body>
+</html>
