@@ -530,7 +530,7 @@ footer {
   font-weight: 300;
   color: #EDEDED;
   background: #7a7a7a;
-  padding: 25px 0; }
+  padding: 30px 7%; }
   footer .toppage {
     color: #EDEDED;
     position: absolute;
@@ -538,7 +538,7 @@ footer {
     margin: auto;
     text-align: center;
     right: 0;
-    bottom: 90px;
+    bottom: 60px;
     left: 0;
     right: 0;
     padding: 8px 5px;
@@ -549,7 +549,8 @@ footer {
       background: #EDEDED;
       color: rgba(228, 19, 106, 0.884); }
   footer .social {
-    font-size: 2em; }
+    font-size: 2em;
+    float: left; }
     footer .social a {
       text-decoration: none;
       color: rgba(14, 199, 231, 0.8); }
@@ -935,8 +936,8 @@ footer {
     font-size: .8em;
     padding: 25px; }
     footer .toppage {
-      bottom: 78px;
-      padding: 5px 3px;
+      bottom: 50px;
+      padding: 9px 3px;
       font-size: 1.9em; } }
 
 /*# sourceMappingURL=styles.css.map */

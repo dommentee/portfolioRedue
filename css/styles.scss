@@ -637,7 +637,7 @@ footer {
   font-weight: 300;
   color: #EDEDED; 
   background: #7a7a7a ;
-  padding: 25px 0;
+  padding: 30px 7%;
   .toppage {
     color: #EDEDED; 
     position: absolute;
@@ -646,7 +646,7 @@ footer {
     margin: auto;
     text-align: center;
     right: 0;
-    bottom: 90px;
+    bottom: 60px;
     left: 0;
     right: 0;
     padding: 8px 5px;
@@ -660,6 +660,7 @@ footer {
   }
   .social {
     font-size: 2em;;
+    float: left;
     a {
       text-decoration: none;
       color: rgba(14, 199, 231, 0.8);
@@ -1326,8 +1327,8 @@ footer {
     font-size: .8em;
     padding: 25px;
     .toppage {
-      bottom: 78px;
-      padding: 5px 3px;
+      bottom: 50px;
+      padding: 9px 3px;
       font-size: 1.9em;
     }
   }
