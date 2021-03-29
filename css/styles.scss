@@ -460,7 +460,6 @@ header {
         margin: 15px 0;
       }
       a {
-
         color: #387094;
         text-decoration: none;
         display: inline-block;
@@ -638,8 +637,8 @@ footer {
   font-weight: 300;
   color: #EDEDED; 
   background: #7a7a7a ;
-  padding: 50px 0;
-  div {
+  padding: 25px 0;
+  .toppage {
     color: #EDEDED; 
     position: absolute;
     width: 50px;
@@ -651,12 +650,22 @@ footer {
     left: 0;
     right: 0;
     padding: 8px 5px;
-    font-size: 2.2em;
+    font-size: 2.1em;
     background: rgba(228, 19, 106, 0.884);
     transition: .3s ease;
     &:hover {
       background: #EDEDED;
       color: rgba(228, 19, 106, 0.884)
+    }
+  }
+  .social {
+    font-size: 2em;;
+    a {
+      text-decoration: none;
+      color: rgba(14, 199, 231, 0.8);
+      &:hover {
+        color: #EDEDED;
+      }
     }
   }
   span {
