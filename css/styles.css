@@ -526,6 +526,8 @@ header {
     opacity: 0;
     pointer-events: none; } }
 footer {
+  display: flex;
+  align-items: center;
   text-align: center;
   font-weight: 300;
   color: #EDEDED;
@@ -550,7 +552,8 @@ footer {
       color: rgba(228, 19, 106, 0.884); }
   footer .social {
     font-size: 2em;
-    float: left; }
+    float: left;
+    margin-right: 15px; }
     footer .social a {
       text-decoration: none;
       color: rgba(14, 199, 231, 0.8); }
@@ -933,10 +936,11 @@ footer {
         padding: 6px 35px; }
 
   footer {
+    padding: 3% 5%;
     font-size: .8em;
-    padding: 25px; }
+    padding: 30px; }
     footer .toppage {
-      bottom: 50px;
+      bottom: 60px;
       padding: 9px 3px;
       font-size: 1.9em; } }
 
