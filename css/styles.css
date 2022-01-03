@@ -89,7 +89,7 @@ header .uinav .bar {
   height: 5px;
   margin: 3px 0;
   background-color: #387094;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 header .uinav .disapear {
   display: none;
@@ -170,6 +170,7 @@ header .uinav .reversetwo {
   transform: translateZ(-288px);
   transform-style: preserve-3d;
   -webkit-animation: cog 60s infinite ease-out;
+  animation: cog 60s infinite ease-out;
 }
 .carousel .lines {
   float: left;
@@ -274,6 +275,7 @@ header .uinav .reversetwo {
   font-size: 1.1em;
   font-weight: 500;
   border: 2.5px solid #387094;
+  transition: 0.5s;
 }
 .hero #intro-wrap #workbuttonwrap #workbutton:hover {
   transition: 0.5s;
@@ -746,7 +748,7 @@ footer span {
     padding: 3.5px;
   }
 }
-@media only screen and (max-width: 823px) {
+@media only screen and (max-width: 860px) {
   .main {
     border-bottom: 20px solid #505050;
   }
@@ -796,6 +798,13 @@ footer span {
   .about {
     padding: 3% 7%;
   }
+  .about .aboutwrap {
+    display: inline-block;
+  }
+  .about .aboutwrap .about-text-wrap {
+    width: 100%;
+    text-align: center;
+  }
   .about .aboutwrap .about-text-wrap span {
     font-size: 1.9em;
   }
@@ -805,6 +814,10 @@ footer span {
   }
   .about .aboutwrap .about-text-wrap #about-text-wrap a {
     margin: 7px 0 0 0;
+  }
+  .about .aboutwrap .aboutcontentwrap .tilewrap {
+    width: 100%;
+    display: flex;
   }
   .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
     padding: 5px 3px;
@@ -864,9 +877,11 @@ footer span {
   }
   .carousel #two {
     height: 86vh;
+    background-color: #55F5AF;
   }
   .carousel #three {
     height: 75vh;
+    background-color: #202D85;
   }
 
   .hero {
@@ -905,8 +920,15 @@ footer span {
     padding: 10px 0;
     font-size: 1em;
   }
+  .about .aboutwrap {
+    display: inline-block;
+  }
+  .about .aboutwrap .about-text-wrap {
+    width: 100%;
+    text-align: center;
+  }
   .about .aboutwrap .about-text-wrap span {
-    font-size: 1.7em;
+    font-size: 1.9em;
   }
   .about .aboutwrap .about-text-wrap #about-text-wrap {
     font-size: 1em;
@@ -914,6 +936,10 @@ footer span {
   }
   .about .aboutwrap .about-text-wrap #about-text-wrap a {
     margin: 5px 0 0 0;
+  }
+  .about .aboutwrap .aboutcontentwrap .tilewrap {
+    width: 100%;
+    display: flex;
   }
   .about .aboutwrap .aboutcontentwrap .tilewrap .tile {
     padding: 4px 2px;
@@ -953,11 +979,6 @@ footer span {
 
   .empty-2 {
     width: 20%;
-  }
-}
-@media (orientation: landscape) and (max-width: 926px) {
-  .main {
-    height: 120vh;
   }
 }
 @media only screen and (max-width: 736px) {

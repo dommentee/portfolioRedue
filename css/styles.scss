@@ -88,7 +88,7 @@ header {
       height: 5px;
       margin: 3px 0;
       background-color: #387094;
-      transition: 0.3s;
+      transition: 0.5s;
     }
     .disapear {
       display: none;
@@ -168,6 +168,7 @@ header {
   transform: translateZ(-288px);
   transform-style: preserve-3d;
   -webkit-animation: cog 60s infinite ease-out;
+  animation: cog 60s infinite ease-out;
 
   .lines {
     float: left;
@@ -250,6 +251,7 @@ header {
         font-size: 1.1em;
         font-weight: 500;
         border: 2.5px solid #387094;
+        transition: .5s;
         &:hover {
           transition: .5s;
           background: rgba(14, 199, 231, 0.8);
@@ -781,7 +783,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 823px) {
+@media only screen and (max-width: 860px) {
   .main {
     .overlayer {
       height: 90vh;
@@ -843,7 +845,10 @@ footer {
   .about {
     padding: 3% 7%; 
     .aboutwrap {
+      display: inline-block;
       .about-text-wrap {
+        width: 100%;
+        text-align: center;
         span {
           font-size: 1.9em;
         }
@@ -857,6 +862,8 @@ footer {
       }
       .aboutcontentwrap {
         .tilewrap {
+          width: 100%;
+          display: flex;
           .tile {
             padding: 5px 3px;
             font-size: .85em;
@@ -947,9 +954,11 @@ footer {
     }
     #two {
       height: 86vh;
+      background-color: #55F5AF;
     }
     #three {
       height: 75vh;
+      background-color: #202D85;
     }
   }
   .hero {
@@ -992,9 +1001,12 @@ footer {
       font-size: 1em;;
     }
     .aboutwrap {
+      display: inline-block;
       .about-text-wrap {
+        width: 100%;
+        text-align: center;
         span {
-          font-size: 1.7em;
+          font-size: 1.9em;
         }
         #about-text-wrap {
           font-size: 1em;
@@ -1006,6 +1018,8 @@ footer {
       }
       .aboutcontentwrap {
         .tilewrap {
+          width: 100%;
+          display: flex;
           .tile {
             padding: 4px 2px;
             font-size: .8em;
@@ -1064,11 +1078,6 @@ footer {
   }
   .empty-2 {
     width: 20%;
-  }
-}
-@media (orientation:landscape) and (max-width: 926px){
-  .main {
-    height: 120vh;
   }
 }
 @media only screen and (max-width: 736px) {
@@ -1344,6 +1353,5 @@ footer {
       font-size: 1.9em;
     }
   }
-
 
 }
