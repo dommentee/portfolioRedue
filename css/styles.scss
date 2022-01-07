@@ -174,7 +174,7 @@ header {
     float: left;
     //display: inline;
     width: 5px;
-    margin: 0 30px;
+    margin: 0 25px;
     opacity: .7;
   }
   #one {
@@ -691,7 +691,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .main {
     .overlayer {
-      height: 75vh;
+      // height: 75vh;
     }
   }
   header {
@@ -801,8 +801,25 @@ footer {
       }
     }
   }
+  .carousel {
+    .lines {
+      margin: 0 20px;
+    }
+    #one {
+      background-color: rgba(20, 20, 20, 0.884);
+      height: 100vh;
+    }
+    #two {
+      background-color: rgba(14, 199, 231, 0.8);
+      height: 70vh;
+    }
+    #three {
+      background-color: rgb(226, 102, 120);
+      height: 80vh;
+    }
+  }
   .hero {
-    margin-top: 8vh;
+    // margin-top: 8vh;
     .hero-greeting {
       #greeting-wrap {
         white-space: pre-line;
@@ -834,7 +851,7 @@ footer {
     }
   }
   .title {
-    padding: 7px 0;;
+    padding: 7px 0;
 
     font-size: 2em;
     div {
@@ -932,7 +949,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .main {
-    height: 75vh;
+    // height: 75vh;
   }
   header {
     .logo {
@@ -958,7 +975,7 @@ footer {
     }
     #three {
       height: 75vh;
-      background-color: #202D85;
+      background-color: rgba(68, 70, 230, 0.884)
     }
   }
   .hero {
@@ -1080,18 +1097,18 @@ footer {
     width: 20%;
   }
 }
-@media only screen and (max-width: 736px) {
-  .main {
-    height: 100vh;
-  }
-  .hero {
-    margin-top: 5vh;
-  }
-}
+// @media only screen and (max-width: 736px) {
+//   .main {
+//     height: 100vh;
+//   }
+//   .hero {
+//     margin-top: 5vh;
+//   }
+// }
 //mobile
 @media screen and (max-width: 640px) {
   .main {
-    height: 65vh;
+    height: 67vh;
     .overlayer {
       padding: 0 5%;
     }
@@ -1116,9 +1133,9 @@ footer {
   }
   .carousel {
     .lines {
-      width: 3px;
+      width: 5px;
       margin: 0 8px;
-      opacity: 1;
+     
     }
     #one {
       height: 30vh;
@@ -1352,6 +1369,14 @@ footer {
       padding: 9px 3px;
       font-size: 1.9em;
     }
+  }
+
+}
+
+@media screen and (max-height: 375px) {
+  .main {
+    height: 100vh;
+
   }
 
 }
