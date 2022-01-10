@@ -447,7 +447,13 @@ header {
       overflow: hidden;
       transition: .85s ease;
       -webkit-transition-delay: .6s;
-      transition-delay: .6s;   
+      transition-delay: .6s; 
+      .tech {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+      }  
     }
     .site-link {
       overflow: hidden;
@@ -490,19 +496,22 @@ header {
         top: -50%;
       }
     }
-    #jm2020 {
-      background: url("/images/gm2020bg1.png");
-      background-position: center;
-      background-size: cover;
-      .sitelogo {
+    #surgical {
+      .site_name {
+        color: rgba(68, 70, 230, 0.884);
+        font-size: 3em;
+        font-weight: 500;
         width: 100%;
-        padding: 20px 0;
-        background: url("/images/gm2020logo.png");
-        background-position: center center;
-        background-repeat: no-repeat;
-        margin-top: 35%;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
       }
+      
     }
+
     #sky {
       background: url("/images/skybg.png");
       background-position: center center;

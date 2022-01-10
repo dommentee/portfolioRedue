@@ -464,6 +464,12 @@ header .uinav .reversetwo {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
+.portfolio .portfoliowrap .site .tech {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
 .portfolio .portfoliowrap .site-link {
   overflow: hidden;
   position: relative;
@@ -506,18 +512,17 @@ header .uinav .reversetwo {
 .portfolio .portfoliowrap .portfolio-wrap:hover .site {
   top: -50%;
 }
-.portfolio .portfoliowrap #jm2020 {
-  background: url("/images/gm2020bg1.png");
-  background-position: center;
-  background-size: cover;
-}
-.portfolio .portfoliowrap #jm2020 .sitelogo {
+.portfolio .portfoliowrap #surgical .site_name {
+  color: rgba(68, 70, 230, 0.884);
+  font-size: 3em;
+  font-weight: 500;
   width: 100%;
-  padding: 20px 0;
-  background: url("/images/gm2020logo.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin-top: 35%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .portfolio .portfoliowrap #sky {
   background: url("/images/skybg.png");
