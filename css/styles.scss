@@ -430,6 +430,7 @@ header {
     .portfolio-wrap {
       background: -webkit-linear-gradient( #fcfafa, #fcfbfb);
       width: 33.33%;
+      margin: 0 0 10px 0;
       height: 325px;
       float: left;
       position: relative;
@@ -498,8 +499,10 @@ header {
       }
     }
     #surgical {
+      background-color: rgba(68, 70, 230, 0.884);
       .site_name {
-        color: rgba(68, 70, 230, 0.884);
+        color: #EDEDED;
+        // color: rgba(68, 70, 230, 0.884);
         font-size: 3em;
         font-weight: 500;
         width: 100%;

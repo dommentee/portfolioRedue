@@ -446,6 +446,7 @@ header .uinav .reversetwo {
 .portfolio .portfoliowrap .portfolio-wrap {
   background: -webkit-linear-gradient(#fcfafa, #fcfbfb);
   width: 33.33%;
+  margin: 0 0 10px 0;
   height: 325px;
   float: left;
   position: relative;
@@ -513,8 +514,11 @@ header .uinav .reversetwo {
 .portfolio .portfoliowrap .portfolio-wrap:hover .site {
   top: -50%;
 }
+.portfolio .portfoliowrap #surgical {
+  background-color: rgba(68, 70, 230, 0.884);
+}
 .portfolio .portfoliowrap #surgical .site_name {
-  color: rgba(68, 70, 230, 0.884);
+  color: #EDEDED;
   font-size: 3em;
   font-weight: 500;
   width: 100%;
