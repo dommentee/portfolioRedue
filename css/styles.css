@@ -588,6 +588,19 @@ header .uinav .reversetwo {
   border-top: 5px solid #EDEDED;
 }
 
+#travel .site_name {
+  color: #3D3D3D;
+  font-size: 3em;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .empty {
   height: 150px;
   background: #525151;
