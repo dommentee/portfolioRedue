@@ -518,8 +518,23 @@ header .uinav .reversetwo {
   background-color: rgba(68, 70, 230, 0.884);
 }
 .portfolio .portfoliowrap #surgical .site_name {
-  color: #EDEDED;
+  color: #faf0e6;
   font-size: 3em;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.portfolio .portfoliowrap #weather {
+  background-color: #f15743;
+}
+.portfolio .portfoliowrap #weather .site_name {
+  color: #EDEDED;
+  font-size: 2em;
   font-weight: 500;
   width: 100%;
   text-align: center;

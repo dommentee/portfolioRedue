@@ -501,8 +501,7 @@ header {
     #surgical {
       background-color: rgba(68, 70, 230, 0.884);
       .site_name {
-        color: #EDEDED;
-        // color: rgba(68, 70, 230, 0.884);
+        color: #faf0e6;
         font-size: 3em;
         font-weight: 500;
         width: 100%;
@@ -513,7 +512,22 @@ header {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
       }
-      
+    }
+    #weather {
+      background-color: rgb(241, 87, 67);
+      .site_name {
+        color: #EDEDED;
+        // color: rgba(68, 70, 230, 0.884);
+        font-size: 2em;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
     }
 
     #sky {
